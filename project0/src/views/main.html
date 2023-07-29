@@ -16,93 +16,94 @@
 
   <body>
     <header>
-      <div class="headerContainer">
+      <div class="header_container">
         <!-- 서치박스 영역 -->
-        <div class="searchContainer">
+        <div class="search_container">
           <!-- logo css에서 백그라운드 이미지 처리-->
-          <div class="logoContainer">
+          <div class="logo_container">
             <h1 aria-label="마켓칼리">
-              <a href="/" class="logoKarly"></a>
+              <a href="/" class="logo_karly"></a>
             </h1>
             <!-- N 이미지 처리 해주어야함 -->
 
-            <div class="switchContainer">
-              <a href="/" class="market__link">마켓칼리</a>
+            <div class="switch_box">
+              <a href="/" class="market_link">마켓칼리</a>
               <span class="divider" aria-hidden="true">|</span>
-              <a href="/" class="beauty__link">뷰티칼리</a>
+              <a href="/" class="beauty_link">뷰티칼리</a>
             </div>
           </div>
           <!-- 검색 영역 -->
 
-          <div class="formContainer">
-            <form action="/" class="searchForm" method="post">
+          <div class="search_form_container">
+            <form action="/" class="search_form" method="post">
               <label for="search">검색어</label>
               <input
                 type="search"
                 id="search"
-                class="searchForm__input"
+                class="search_form_input"
                 required
                 placeholder="검색어를 입력해주세요"
               />
 
-              <button type="submit" class="searchIcon search__button"></button>
+              <button type="submit" class="search_icon search_button"></button>
             </form>
           </div>
 
           <!-- 아이콘 영역 -->
-          <ul class="memberIcon">
+          <ul class="member_icon">
             <li>
-              <a href="/" aria-label="배송지 설정" class="locationIcon"></a>
+              <a href="/" aria-label="배송지 설정" class="location_icon"></a>
             </li>
-            <li><a href="/" aria-label="찜하기" class="heartIcon"></a></li>
+            <li><a href="/" aria-label="찜하기" class="heart_icon"></a></li>
             <li>
               <a
                 href="/views/cart.html"
                 aria-label="장바구니"
-                class="blackCart__Icon"
+                class="black_cart_icon"
               ></a>
             </li>
           </ul>
         </div>
 
         <!-- 네비게이션 영역 -->
-        <nav class="nav" role="navigation">
+        <nav class="header_nav" role="navigation">
           <!-- 햄버거 버튼 카테고리 -->
-          <button type="button" class="nav__button">카테고리</button>
-          <ul class="nav__list">
+          <button type="button" class="header_nav_button">카테고리</button>
+          <ul class="header_nav_list">
             <li><a href="/">신상품</a></li>
             <li><a href="/views/productList.html">베스트</a></li>
             <li><a href="/">알뜰쇼핑</a></li>
             <li><a href="/">특가/혜택</a></li>
           </ul>
 
-          <a href="/" class="nav__link">
-            <span class="link__color">샛별&#183;낮 </span>배송안내
+          <a href="/" class="morning_star_delivery">
+            <span class="morning_star_delivery_color">샛별&#183;낮 </span
+            >배송안내
           </a>
         </nav>
 
         <!-- 회원가입 영역 -->
-        <ul class="memberOnly">
-          <li class="memberOnly__list">
-            <a href="/views/register.html" class="member__signUp">회원가입</a>
+        <ul class="member_only">
+          <li class="member_only_list">
+            <a href="/views/register.html" class="member_sign_up">회원가입</a>
           </li>
-          <li class="memberOnly__list">
+          <li class="member_only_list">
             <span class="divider" aria-hidden="true">ㅣ</span>
-            <a href="/views/login.html" class="member__signIn">로그인</a>
+            <a href="/views/login.html" class="member_sign_in">로그인</a>
           </li>
-          <li class="memberOnly__list">
+          <li class="member_only_list">
             <span class="divider" aria-hidden="true">ㅣ</span>
-            <a href="/" class="member__cusCenter">고객센터</a>
+            <a href="/" class="member_custermer_center">고객센터</a>
           </li>
         </ul>
       </div>
 
-      <div class="headerBanner">
-        <a class="headerBanner__link" href="/"
+      <div class="header_banner">
+        <a class="header_banner_link" href="/"
           >지금 가입하고 인기상품 <span class="bold">100원</span>에
           받아가세요!</a
         >
-        <button type="button" class="cancelIcon headerBanner__button"></button>
+        <button type="button" class="cancel_icon header_banner_button"></button>
       </div>
     </header>
 
@@ -150,7 +151,7 @@
       </section>
 
       <!-- recommendProduct => recommend , 이유 : recommendProduct__product 클래스 네임에 product가 중복되서 적합하지 않다고 판단 -->
-      <!-- bem 패턴 :  __  => _ 변경 (언더바 2개에서 1개로 변경)-->
+      <!-- bem; 패턴 :  __  => _ 변경 (언더바 2개에서 1개로 변경)-->
       <section class="recommend">
         <h2 class="recommend_title" aria-label="오늘 추천 상품">
           이 상품 어때요?
@@ -411,81 +412,81 @@
         </figure>
 
         <!-- main_popup_closeTodayButton => main_popup_not_today -->
-        <button class="main_popup__not_today">오늘 하루 안보기</button>
+        <button class="main_popup_not_today">오늘 하루 안보기</button>
         <!-- main_popup_closeButton => main_popup_close -->
         <button class="main_popup_close">닫기</button>
       </aside>
     </main>
 
     <footer>
-      <div class="footerTop">
-        <div class="footerInfo">
-          <div class="customerService">
-            <h3 class="happyCenter">고객행복센터</h3>
+      <div class="foote_top">
+        <div class="footer_info">
+          <div class="customer_service">
+            <h3 class="happy_center">고객행복센터</h3>
 
             <!-- 기타 문의 -->
 
-            <dl class="numberInquiry">
+            <dl class="number_inquiry">
               <dt class="a11y">전화문의</dt>
-              <dd class="centerNumber">1644-1107</dd>
-              <dd class="centerTime">월~토요일 오전 7시 ~ 오후 6시</dd>
+              <dd class="center_number">1644-1107</dd>
+              <dd class="center_time">월~토요일 오전 7시 ~ 오후 6시</dd>
             </dl>
 
-            <dl class="kakaoInquiry">
+            <dl class="kakao_inquiry">
               <dt class="a11y">카카오톡 문의</dt>
 
               <dd>
                 월~토요일
-                <span class="dividerCustomer" aria-hidden="true">|</span>
+                <span class="divider_inquiry" aria-hidden="true">|</span>
                 오전 7시 ~ 오후 6시<br />
                 일/공휴일
-                <span class="dividerCustomer" aria-hidden="true">|</span>
+                <span class="divider_inquiry" aria-hidden="true">|</span>
                 오전 7시 ~ 오후 1시
               </dd>
               <dd>
-                <button class="inquiryButton">카카오톡 문의</button>
+                <button class="inquiry_button">카카오톡 문의</button>
               </dd>
             </dl>
 
-            <dl class="oneononeInquiry">
+            <dl class="one_on_one_inquiry">
               <dt class="a11y">일대일 문의</dt>
 
               <dd>
                 365일<br />고객센터 운영시간에 순차적으로 답변드리겠습니다.
               </dd>
               <dd>
-                <button class="inquiryButton">1:1 문의</button>
+                <button class="inquiry_button" ;>1:1 문의</button>
               </dd>
             </dl>
 
-            <dl class="bulkInquiry">
+            <dl class="bulk_inquiry">
               <dt class="a11y">대량주문 문의</dt>
 
               <dd>
                 월~금요일
-                <span class="dividerCustomer" aria-hidden="true">|</span>
+                <span class="divider_inquiry" aria-hidden="true">|</span>
                 오전 9시 ~ 오후 6시<br />
                 점심시간
-                <span class="dividerCustomer" aria-hidden="true">|</span>
+                <span class="divider_inquiry" aria-hidden="true">|</span>
                 낮 12시 ~ 오후 1시
               </dd>
               <dd>
-                <button class="inquiryButton">대량주문 문의</button>
+                <button class="inquiry_button">대량주문 문의</button>
               </dd>
             </dl>
 
             <!-- </dl> -->
 
             <!-- 이메일 문의 -->
-            <address class="nonMember">
-              비회원 문의 : <span class="primary">help@karlycorp.com</span
+            <address class="non_member">
+              비회원; 문의 : <span class="primary">help@karlycorp.com</span
               ><br />
-              비회원 대량주문 문의 :
+              비회원 대량주문; 문의 :
               <span class="primary">help@karlycorp.com</span>
             </address>
           </div>
           <div class="about">
-            <ul class="about__nav">
+            <ul class="about_nav">
               <li><a href="/">칼리소개</a></li>
               <li><a href="/">칼리소개영상</a></li>
               <li><a href="/">인재채용</a></li>
@@ -493,28 +494,26 @@
               <li><a href="/">개인정보처리방침</a></li>
               <li><a href="/">이용안내</a></li>
             </ul>
-            <address class="about__info">
-              법인명 (상호) : 주식회사 컬리
-              <span class="dividerAbout" aria-hidden="true">|</span>
+            <address class="about_info">
+              ; 법인명 (상호) : 주식회사 컬리
+              <span class="divider_about" aria-hidden="true">|</span>;
               사업자등록번호 : 261-81-23567
-              <span class="dividerAbout" aria-hidden="true">|</span>
-              <a href="/" class="primary">사업자정보 확인</a><br />
-              통신판매업 : 제 2018-서울강남-01646 호
-              <span class="dividerAbout" aria-hidden="true">|</span>
-              개인정보보호책임자 : 이원준<br />
-              주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)
-              <span class="dividerAbout" aria-hidden="true">|</span>
-              대표이사 : 김슬아<br />
-              입점문의 : 입정문의하기
-              <span class="dividerAbout" aria-hidden="true">|</span>
-              제휴문의 :
-              <span class="primary">business@karlycorp.com</span><br />
-              채용문의 :
-              <span class="primary">recruit@karlycorp.com</span><br />
-              팩스 : 070 - 7500 - 6098
+              <span class="divider_about" aria-hidden="true">|</span>
+              <a href="/" class="primary">사업자정보 확인</a><br />; 통신판매업
+              : 제 2018-서울강남-01646 호
+              <span class="divider_about" aria-hidden="true">|</span>;
+              개인정보보호책임자 : 이원준<br />; 주소 : 서울특별시 강남구
+              테헤란로 133, 18층(역삼동)
+              <span class="divider_about" aria-hidden="true">|</span>; 대표이사
+              : 김슬아<br />; 입점문의 : 입정문의하기
+              <span class="divider_about" aria-hidden="true">|</span>; 제휴문의
+              : <span class="primary">business@karlycorp.com</span><br />;
+              채용문의 : <span class="primary">recruit@karlycorp.com</span
+              ><br />; 팩스 : 070 - 7500 - 6098
             </address>
 
-            <ul class="snsContainer">
+            <!-- snsContainer => sns_box -->
+            <ul class="sns_box">
               <li><a href="/" class="blog"></a></li>
               <li><a href="/" class="facebook"></a></li>
               <li><a href="/" class="instagram"></a></li>
@@ -523,27 +522,28 @@
             </ul>
           </div>
         </div>
-        <div class="footerCompany">
-          <ul class="companyWrap">
-            <li class="company__list">
+        <!-- footerCompnay => company -->
+        <div class="company">
+          <ul class="company_wrap">
+            <li class="company_list">
               <a href="/" class="isms">
                 [인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영 (심사받지 않은
                 물리적 인프라 제외) <br />
                 [유효기간] 2022.01.19 - 2025.01.18
               </a>
             </li>
-            <li class="company__list">
+            <li class="company_list">
               <a href="/" class="privacy">
                 개인정보보호 우수 웹사이트 <br />
                 개인정보처리시스템 인증(ePRIVACY PLUS)
               </a>
             </li>
-            <li class="company__list">
+            <li class="company_list">
               <a href="/" class="toss">
                 토스페이먼츠 구매 안전(에스크로) 서비스를 이용하실 수 있습니다.
               </a>
             </li>
-            <li class="company__list">
+            <li class="company_list">
               <a href="/" class="woori">
                 고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보증
                 계약을 체결하여 안전거래를 보장하고 있습니다.
@@ -553,7 +553,7 @@
         </div>
       </div>
 
-      <div class="footerBottom">
+      <div class="footer_bottom">
         <span
           >마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가
           판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</span
@@ -563,7 +563,7 @@
           통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불
           등 의무와 책임을 부담하지 않습니다.</span
         >
-        <small>&copy; KURLY CORP. ALL RIGHTS RESERVED</small>
+        <small>&copy KURLY CORP. ALL RIGHTS RESERVED</small>
       </div>
     </footer>
   </body>
