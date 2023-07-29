@@ -1,408 +1,570 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마켓칼리</title>
 
-  <title>마켓칼리</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="../style/index.css" />
+  </head>
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-  <link rel="stylesheet" href="../style/index.css" />
-</head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <!-- 서치박스 영역 -->
+        <div class="searchContainer">
+          <!-- logo css에서 백그라운드 이미지 처리-->
+          <div class="logoContainer">
+            <h1 aria-label="마켓칼리">
+              <a href="/" class="logoKarly"></a>
+            </h1>
+            <!-- N 이미지 처리 해주어야함 -->
 
-<body>
-  <header>
-    <div class="headerContainer">
-      <!-- 서치박스 영역 -->
-      <div class="searchContainer">
-        <!-- logo css에서 백그라운드 이미지 처리-->
-        <div class="logoContainer">
-          <h1 aria-label="마켓칼리">
-            <a href="/" class="logoKarly"></a>
-          </h1>
-          <!-- N 이미지 처리 해주어야함 -->
+            <div class="switchContainer">
+              <a href="/" class="market__link">마켓칼리</a>
+              <span class="divider" aria-hidden="true">|</span>
+              <a href="/" class="beauty__link">뷰티칼리</a>
+            </div>
+          </div>
+          <!-- 검색 영역 -->
 
-          <div class="switchContainer">
-            <a href="/" class="market__link">마켓칼리</a>
-            <span class="divider" aria-hidden="true">|</span>
-            <a href="/" class="beauty__link">뷰티칼리</a>
+          <div class="formContainer">
+            <form action="/" class="searchForm" method="post">
+              <label for="search">검색어</label>
+              <input
+                type="search"
+                id="search"
+                class="searchForm__input"
+                required
+                placeholder="검색어를 입력해주세요"
+              />
+
+              <button type="submit" class="searchIcon search__button"></button>
+            </form>
+          </div>
+
+          <!-- 아이콘 영역 -->
+          <ul class="memberIcon">
+            <li>
+              <a href="/" aria-label="배송지 설정" class="locationIcon"></a>
+            </li>
+            <li><a href="/" aria-label="찜하기" class="heartIcon"></a></li>
+            <li>
+              <a
+                href="/views/cart.html"
+                aria-label="장바구니"
+                class="blackCart__Icon"
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 네비게이션 영역 -->
+        <nav class="nav" role="navigation">
+          <!-- 햄버거 버튼 카테고리 -->
+          <button type="button" class="nav__button">카테고리</button>
+          <ul class="nav__list">
+            <li><a href="/">신상품</a></li>
+            <li><a href="/views/productList.html">베스트</a></li>
+            <li><a href="/">알뜰쇼핑</a></li>
+            <li><a href="/">특가/혜택</a></li>
+          </ul>
+
+          <a href="/" class="nav__link">
+            <span class="link__color">샛별&#183;낮 </span>배송안내
+          </a>
+        </nav>
+
+        <!-- 회원가입 영역 -->
+        <ul class="memberOnly">
+          <li class="memberOnly__list">
+            <a href="/views/register.html" class="member__signUp">회원가입</a>
+          </li>
+          <li class="memberOnly__list">
+            <span class="divider" aria-hidden="true">ㅣ</span>
+            <a href="/views/login.html" class="member__signIn">로그인</a>
+          </li>
+          <li class="memberOnly__list">
+            <span class="divider" aria-hidden="true">ㅣ</span>
+            <a href="/" class="member__cusCenter">고객센터</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="headerBanner">
+        <a class="headerBanner__link" href="/"
+          >지금 가입하고 인기상품 <span class="bold">100원</span>에
+          받아가세요!</a
+        >
+        <button type="button" class="cancelIcon headerBanner__button"></button>
+      </div>
+    </header>
+
+    <!-- main__main => main_page_container -->
+    <main class="main_page_container">
+      <!-- 메인 배너 섹션-->
+
+      <!-- mainBanner => main_banner -->
+
+      <!-- mainBanner => main_banner -->
+      <section class="main_banner">
+        <h2 class="a11yHidden">메인 배너</h2>
+
+        <!-- mainBanner__imageBox => main_banner_image_box -->
+        <figure class="main_banner_image_Box">
+          <!-- "main_banner__image => "main_banner_image -->
+          <img
+            class="main_banner_image"
+            src="/images/banner05.png"
+            alt="메인 광고배너 이미지"
+          />
+          <figcaption class="a11yHidden">
+            컬리 장보기의 특권&#44; 이 주의 특가 한 눈에 보기&#44; 우측 상단
+            특가 혜택에서 확인하세요
+          </figcaption>
+        </figure>
+        <!-- main_banner__page =>main_banner_page -->
+        <div class="main_banner_page" aria-label="메인 배너 다섯 개중 첫번째">
+          1&#47;5
+        </div>
+
+        <!-- main_banner__buttonBox => main_banner_button_box -->
+        <div class="main_banner_button_box">
+          <!-- main_banner__button => main_banner_button, main_banner_leftArrow  추후 테일윈드 사용시 제거해도 될것 같음-->
+          <button
+            class="main_banner_button main_banner_leftArrow"
+            aria-label="메인배너 왼쪽으로 가기 버튼"
+          ></button>
+          <button
+            class="main_banner_button main_banner_right_arrow"
+            aria-label="메인배너 오른쪽으로 가기 버튼"
+          ></button>
+        </div>
+        <!-- 오늘 추천상품 '이 상품 어때요?' 섹션 -->
+      </section>
+
+      <!-- recommendProduct => recommend , 이유 : recommendProduct__product 클래스 네임에 product가 중복되서 적합하지 않다고 판단 -->
+      <!-- bem 패턴 :  __  => _ 변경 (언더바 2개에서 1개로 변경)-->
+      <section class="recommend">
+        <h2 class="recommend_title" aria-label="오늘 추천 상품">
+          이 상품 어때요?
+        </h2>
+        <ul class="recommend_list">
+          <li class="recommend_product" aria-label="상품 일번">
+            <a href="/">
+              <figure class="recommend_image">
+                <img
+                  src="/images/product01.png"
+                  alt="풀무원 탱탱쫄면 네개입 이미지"
+                />
+              </figure>
+            </a>
+            <a
+              class="recommend_name"
+              href="/"
+              aria-label="풀무원 탱탱쫄면 네개입"
+              >&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</a
+            >
+            <span class="recommend_price" aria-label="가격 사만구천팔십 원"
+              >4&#44;980 원</span
+            >
+            <button class="recommend_cart" aria-label="장바구니 버튼"></button>
+          </li>
+          <li class="recommend_product" aria-label="상품 이번">
+            <a href="/">
+              <figure class="recommend_image">
+                <img
+                  src="/images/product02.png"
+                  alt="온더바디 죠르디 시카 자석 선쿠션 이미지"
+                />
+              </figure>
+            </a>
+            <a
+              class="recommend_name"
+              href="/"
+              aria-label="온더바디 죠르디 시카 자석 선쿠션"
+              >&#91;온더바디&#93; 죠르디 시카 자석 선쿠션</a
+            >
+            <span class="recommend_price" aria-label="가격 삼만이천오백 원"
+              >32&#44;500 원</span
+            >
+            <button class="recommend_cart" aria-label="장바구니 버튼"></button>
+          </li>
+          <li class="recommend_product" aria-label="상품 삼번">
+            <a href="/">
+              <figure class="recommend_image">
+                <img
+                  src="/images/product03.png"
+                  alt="유기농 밀키퀀 현미 이미지"
+                />
+              </figure>
+            </a>
+            <a
+              class="recommend_name"
+              href="/"
+              aria-label="유기농 밀키퀀 현미 사 키로그램"
+              >유기농 밀키퀀 현미 4kg</a
+            >
+            <span class="recommend_price" aria-label="가격 이만오천 원"
+              >25&#44;000 원</span
+            >
+            <button class="recommend_cart" aria-label="장바구니 버튼"></button>
+          </li>
+          <li class="recommend_product" aria-label="상품 사번">
+            <a href="/">
+              <figure class="recommend_image">
+                <img
+                  src="/images/product04.png"
+                  alt="프로쉬 베이비 세탁세 이미지"
+                />
+              </figure>
+            </a>
+            <a class="recommend_name" href="/" aria-label="프로쉬 베이비 세탁세"
+              >&#91;프로쉬&#93; 베이비 세탁세</a
+            >
+            <span class="recommend_sale" aria-label="세일 이십사 퍼센트"
+              >24&#37;</span
+            >
+            <span class="recommend_price" aria-label="가격 만팔천구백 원"
+              >18&#44;900 원</span
+            >
+            <span class="recommend_before_price" aria-hidden="true"
+              >24&#44;000 원</span
+            >
+            <button class="recommend_cart" aria-label="장바구니 버튼"></button>
+          </li>
+        </ul>
+        <button
+          class="recommend_right_arrow"
+          aria-label="추천상품 더보기 버튼"
+        ></button>
+      </section>
+
+      <!-- 중간 서브 라인 배너 섹션-->
+      <!-- lineBanner => line_banner -->
+      <section class="line_banner">
+        <h2 class="a11yHidden">서브 라인 배너</h2>
+        <figure class="line_banner_image_box">
+          <img
+            class="line_banner_image"
+            src="/images/line-banner1.png"
+            alt="서브 라인 광고배너 이미지"
+          />
+          <figcaption class="a11yHidden">
+            더 풍성해진 10월 퍼플위크 이벤트 진행&#44; 적립률 올라가고 3종
+            쿠폰팩 증정
+          </figcaption>
+        </figure>
+      </section>
+      <!-- 오늘 추천상품 '놓치면 후회할 가격' 섹션 -->
+
+      <section class="recommend">
+        <h2 class="recommend_title" aria-label="좋은 가격 상품">
+          놓치면 후회할 가격
+        </h2>
+        <ul class="recommend_list">
+          <li class="recommend_product" aria-label="상품 일번">
+            <a href="/">
+              <figure class="recommend_image">
+                <img
+                  src="/images/product01.png"
+                  alt="풀무원 탱탱쫄면 네개입 이미지"
+                />
+              </figure>
+            </a>
+            <a
+              class="recommend_name"
+              href="/"
+              aria-label="풀무원 탱탱쫄면 네개입"
+              >&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</a
+            >
+            <span class="recommend_price" aria-label="가격 사천구백팔십 원"
+              >4&#44;980 원</span
+            >
+            <button class="recommend_cart" aria-label="장바구니 버튼"></button>
+          </li>
+          <li class="recommend_product" aria-label="상품 이번">
+            <a href="/">
+              <figure class="recommend_image">
+                <img
+                  src="/images/product02.png"
+                  alt="온더바디 죠르디 시카 자석 선쿠션 이미지"
+                />
+              </figure>
+            </a>
+            <a
+              class="recommend_name"
+              href="/"
+              aria-label="온더바디 죠르디 시카 자석 선쿠션"
+              >&#91;온더바디&#93; 죠르디 시카 자석 선쿠션</a
+            >
+            <span class="recommend_price" aria-label="가격 삼이천오백 원"
+              >32&#44;500 원</span
+            >
+            <button class="recommend_cart" aria-label="장바구니 버튼"></button>
+          </li>
+          <li class="recommend_product" aria-label="상품 삼번">
+            <a href="/">
+              <figure class="recommend_image">
+                <img
+                  src="/images/product03.png"
+                  alt="유기농 밀키퀀 현미 이미지"
+                />
+              </figure>
+            </a>
+            <a
+              class="recommend_name"
+              href="/"
+              aria-label="유기농 밀키퀀 현미 4키로그램"
+              >유기농 밀키퀀 현미 4kg</a
+            >
+            <span class="recommend_price" aria-label="가격 이만오천 원"
+              >25&#44;000 원</span
+            >
+            <button class="recommend_cart" aria-label="장바구니 버튼"></button>
+          </li>
+          <li class="recommend_product" aria-label="상품 사번">
+            <figure class="recommend_image">
+              <img
+                src="/images/product04.png"
+                alt="프로쉬 베이비 세탁세 이미지"
+              />
+            </figure>
+            <a class="recommend_name" href="/" aria-label="프로쉬 베이비 세탁세"
+              >&#91;프로쉬&#93; 베이비 세탁세</a
+            >
+            <span class="recommend_sale" aria-label="세일 이십사 퍼센트"
+              >24&#37;</span
+            >
+            <span class="recommend_price" aria-label="가격 만팔천구백 원"
+              >18&#44;900 원</span
+            >
+            <span class="recommend_before_price" aria-hidden="true"
+              >24&#44;000 원</span
+            >
+            <button class="recommend_cart" aria-label="장바구니 버튼"></button>
+          </li>
+        </ul>
+        <button
+          class="recommend_right_arrow"
+          aria-label="추천상품 더보기 버튼"
+        ></button>
+      </section>
+      <!-- 최근 본 상품 오른쪽 사이드바 -->
+      <aside>
+        <!-- recentProduct => recent_viewed : 최근 본 상품이기 때문에 봤다는 것을 명시적으로 알려줄 수 있는 class 명으로 변경 -->
+        <section class="recent_viewed">
+          <h2>최근 본 상품</h2>
+          <ul class="recent_viewed_list">
+            <li class="recent_viewed_item">
+              <a href="/">
+                <img
+                  src="/images/product01.png"
+                  alt="풀무원 탱탱쫄면 네개입 이미지"
+                />
+              </a>
+            </li>
+            <li class="recent_viewed_item">
+              <a href="/">
+                <img
+                  src="/images/product04.png"
+                  alt="프로쉬 베이비 세탁세 이미지"
+                />
+              </a>
+            </li>
+            <li class="recent_viewed_item">
+              <a href="/">
+                <img
+                  src="/images/product02.png"
+                  alt="온더바디 죠르디 시카 자석 선쿠션 이미지"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <!--recent_viewed_button_up => recent_viewed_up  -->
+          <!--recent_viewed_button_down => recent_viewed_down  -->
+          <button
+            class="recent_viewed_up recent_viewed_sprite"
+            aria-label="최근 본 상품 위로가기 버튼"
+          ></button>
+          <button
+            class="recent_viewed_down recent_viewed_sprite"
+            aria-label="최근 본 상품 아래로가기 버튼"
+          ></button>
+        </section>
+      </aside>
+      <!-- 뷰티 플랫폼 광고 팝업창 -->
+      <!-- mainPopup => main_popup -->
+      <aside class="main_popup">
+        <figure>
+          <img src="/images/mainPopup.png" alt="뷰티컬리 광고팝업창" />
+          <figcaption class="a11yHidden">
+            처음 만나는 뷰티 플랫폼 뷰티컬리 지금바로 만나보세요
+          </figcaption>
+        </figure>
+
+        <!-- main_popup_closeTodayButton => main_popup_not_today -->
+        <button class="main_popup_closeTodayButton">오늘 하루 안보기</button>
+        <!-- main_popup_closeButton => main_popup_close -->
+        <button class="main_popup_closeButton">닫기</button>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="footerTop">
+        <div class="footerInfo">
+          <div class="customerService">
+            <h3 class="happyCenter">고객행복센터</h3>
+
+            <!-- 기타 문의 -->
+
+            <dl class="numberInquiry">
+              <dt class="a11y">전화문의</dt>
+              <dd class="centerNumber">1644-1107</dd>
+              <dd class="centerTime">월~토요일 오전 7시 ~ 오후 6시</dd>
+            </dl>
+
+            <dl class="kakaoInquiry">
+              <dt class="a11y">카카오톡 문의</dt>
+
+              <dd>
+                월~토요일
+                <span class="dividerCustomer" aria-hidden="true">|</span>
+                오전 7시 ~ 오후 6시<br />
+                일/공휴일
+                <span class="dividerCustomer" aria-hidden="true">|</span>
+                오전 7시 ~ 오후 1시
+              </dd>
+              <dd>
+                <button class="inquiryButton">카카오톡 문의</button>
+              </dd>
+            </dl>
+
+            <dl class="oneononeInquiry">
+              <dt class="a11y">일대일 문의</dt>
+
+              <dd>
+                365일<br />고객센터 운영시간에 순차적으로 답변드리겠습니다.
+              </dd>
+              <dd>
+                <button class="inquiryButton">1:1 문의</button>
+              </dd>
+            </dl>
+
+            <dl class="bulkInquiry">
+              <dt class="a11y">대량주문 문의</dt>
+
+              <dd>
+                월~금요일
+                <span class="dividerCustomer" aria-hidden="true">|</span>
+                오전 9시 ~ 오후 6시<br />
+                점심시간
+                <span class="dividerCustomer" aria-hidden="true">|</span>
+                낮 12시 ~ 오후 1시
+              </dd>
+              <dd>
+                <button class="inquiryButton">대량주문 문의</button>
+              </dd>
+            </dl>
+
+            <!-- </dl> -->
+
+            <!-- 이메일 문의 -->
+            <address class="nonMember">
+              비회원 문의 : <span class="primary">help@karlycorp.com</span
+              ><br />
+              비회원 대량주문 문의 :
+              <span class="primary">help@karlycorp.com</span>
+            </address>
+          </div>
+          <div class="about">
+            <ul class="about__nav">
+              <li><a href="/">칼리소개</a></li>
+              <li><a href="/">칼리소개영상</a></li>
+              <li><a href="/">인재채용</a></li>
+              <li><a href="/">이용약관</a></li>
+              <li><a href="/">개인정보처리방침</a></li>
+              <li><a href="/">이용안내</a></li>
+            </ul>
+            <address class="about__info">
+              법인명 (상호) : 주식회사 컬리
+              <span class="dividerAbout" aria-hidden="true">|</span>
+              사업자등록번호 : 261-81-23567
+              <span class="dividerAbout" aria-hidden="true">|</span>
+              <a href="/" class="primary">사업자정보 확인</a><br />
+              통신판매업 : 제 2018-서울강남-01646 호
+              <span class="dividerAbout" aria-hidden="true">|</span>
+              개인정보보호책임자 : 이원준<br />
+              주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)
+              <span class="dividerAbout" aria-hidden="true">|</span>
+              대표이사 : 김슬아<br />
+              입점문의 : 입정문의하기
+              <span class="dividerAbout" aria-hidden="true">|</span>
+              제휴문의 :
+              <span class="primary">business@karlycorp.com</span><br />
+              채용문의 :
+              <span class="primary">recruit@karlycorp.com</span><br />
+              팩스 : 070 - 7500 - 6098
+            </address>
+
+            <ul class="snsContainer">
+              <li><a href="/" class="blog"></a></li>
+              <li><a href="/" class="facebook"></a></li>
+              <li><a href="/" class="instagram"></a></li>
+              <li><a href="/" class="naverPost"></a></li>
+              <li><a href="/" class="youtube"></a></li>
+            </ul>
           </div>
         </div>
-        <!-- 검색 영역 -->
-
-        <div class="formContainer">
-          <form action="/" class="searchForm" method="post">
-            <label for="search">검색어</label>
-            <input type="search" id="search" class="searchForm__input" required placeholder="검색어를 입력해주세요" />
-
-            <button type="submit" class="searchIcon search__button"></button>
-          </form>
-        </div>
-
-        <!-- 아이콘 영역 -->
-        <ul class="memberIcon">
-          <li>
-            <a href="/" aria-label="배송지 설정" class="locationIcon"></a>
-          </li>
-          <li><a href="/" aria-label="찜하기" class="heartIcon"></a></li>
-          <li>
-            <a href="/views/cart.html" aria-label="장바구니" class="blackCart__Icon"></a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- 네비게이션 영역 -->
-      <nav class="nav" role="navigation">
-        <!-- 햄버거 버튼 카테고리 -->
-        <button type="button" class="nav__button">카테고리</button>
-        <ul class="nav__list">
-          <li><a href="/">신상품</a></li>
-          <li><a href="/views/productList.html">베스트</a></li>
-          <li><a href="/">알뜰쇼핑</a></li>
-          <li><a href="/">특가/혜택</a></li>
-        </ul>
-
-        <a href="/" class="nav__link">
-          <span class="link__color">샛별&#183;낮 </span>배송안내
-        </a>
-      </nav>
-
-      <!-- 회원가입 영역 -->
-      <ul class="memberOnly">
-        <li class="memberOnly__list">
-          <a href="/views/register.html" class="member__signUp">회원가입</a>
-        </li>
-        <li class="memberOnly__list">
-          <span class="divider" aria-hidden="true">ㅣ</span>
-          <a href="/views/login.html" class="member__signIn">로그인</a>
-        </li>
-        <li class="memberOnly__list">
-          <span class="divider" aria-hidden="true">ㅣ</span>
-          <a href="/" class="member__cusCenter">고객센터</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="headerBanner">
-      <a class="headerBanner__link" href="/">지금 가입하고 인기상품 <span class="bold">100원</span>에
-        받아가세요!</a>
-      <button type="button" class="cancelIcon headerBanner__button"></button>
-    </div>
-  </header>
-
-  <main class="main__main">
-    <!-- 메인 배너 섹션-->
-    <section class="mainBanner">
-      <h2 class="a11yHidden">메인 배너</h2>
-      <figure class="mainBanner__imageBox">
-        <img class="mainBanner__image" src="/images/banner05.png" alt="메인 광고배너 이미지" />
-        <figcaption class="a11yHidden">
-          컬리 장보기의 특권&#44; 이 주의 특가 한 눈에 보기&#44; 우측 상단
-          특가 혜택에서 확인하세요
-        </figcaption>
-      </figure>
-      <div class="mainBanner__page" aria-label="메인 배너 다섯 개중 첫번째">
-        1&#47;5
-      </div>
-      <div class="mainBanner__buttonBox">
-        <button class="mainBanner__button mainBanner__leftArrow" aria-label="메인배너 왼쪽으로 가기 버튼"></button>
-        <button class="mainBanner__button mainBanner__rightArrow" aria-label="메인배너 오른쪽으로 가기 버튼"></button>
-      </div>
-      <!-- 오늘 추천상품 '이 상품 어때요?' 섹션 -->
-    </section>
-    <section class="recommendProduct">
-      <h2 class="recommendProduct__title" aria-label="오늘 추천 상품">
-        이 상품 어때요?
-      </h2>
-      <ul class="recommendProduct__list">
-        <li class="recommendProduct__product" aria-label="상품 일번">
-          <a href="/">
-            <figure class="recommendProduct__image">
-              <img src="/images/product01.png" alt="풀무원 탱탱쫄면 네개입 이미지" />
-            </figure>
-          </a>
-          <a class="recommendProduct__name" href="/" aria-label="풀무원 탱탱쫄면 네개입">&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</a>
-          <span class="recommendProduct__price" aria-label="가격 사만구천팔십 원">4&#44;980 원</span>
-          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
-        </li>
-        <li class="recommendProduct__product" aria-label="상품 이번">
-          <a href="/">
-            <figure class="recommendProduct__image">
-              <img src="/images/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" />
-            </figure>
-          </a>
-          <a class="recommendProduct__name" href="/" aria-label="온더바디 죠르디 시카 자석 선쿠션">&#91;온더바디&#93; 죠르디 시카 자석 선쿠션</a>
-          <span class="recommendProduct__price" aria-label="가격 삼만이천오백 원">32&#44;500 원</span>
-          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
-        </li>
-        <li class="recommendProduct__product" aria-label="상품 삼번">
-          <a href="/">
-            <figure class="recommendProduct__image">
-              <img src="/images/product03.png" alt="유기농 밀키퀀 현미 이미지" />
-            </figure>
-          </a>
-          <a class="recommendProduct__name" href="/" aria-label="유기농 밀키퀀 현미 사 키로그램">유기농 밀키퀀 현미 4kg</a>
-          <span class="recommendProduct__price" aria-label="가격 이만오천 원">25&#44;000 원</span>
-          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
-        </li>
-        <li class="recommendProduct__product" aria-label="상품 사번">
-          <a href="/">
-            <figure class="recommendProduct__image">
-              <img src="/images/product04.png" alt="프로쉬 베이비 세탁세 이미지" />
-            </figure>
-          </a>
-          <a class="recommendProduct__name" href="/" aria-label="프로쉬 베이비 세탁세">&#91;프로쉬&#93; 베이비 세탁세</a>
-          <span class="recommendProduct__sale" aria-label="세일 이십사 퍼센트">24&#37;</span>
-          <span class="recommendProduct__price" aria-label="가격 만팔천구백 원">18&#44;900 원</span>
-          <span class="recommendProduct__beforePrice" aria-hidden="true">24&#44;000 원</span>
-          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
-        </li>
-      </ul>
-      <button class="recommendProduct__rightArrow" aria-label="추천상품 더보기 버튼"></button>
-    </section>
-    <!-- 중간 서브 라인 배너 섹션-->
-    <section class="lineBanner">
-      <h2 class="a11yHidden">서브 라인 배너</h2>
-      <figure class="lineBanner__imageBox">
-        <img class="lineBanner__image" src="/images/line-banner1.png" alt="서브 라인 광고배너 이미지" />
-        <figcaption class="a11yHidden">
-          더 풍성해진 10월 퍼플위크 이벤트 진행&#44; 적립률 올라가고 3종
-          쿠폰팩 증정
-        </figcaption>
-      </figure>
-    </section>
-    <!-- 오늘 추천상품 '놓치면 후회할 가격' 섹션 -->
-    <section class="recommendProduct">
-      <h2 class="recommendProduct__title" aria-label="좋은 가격 상품">
-        놓치면 후회할 가격
-      </h2>
-      <ul class="recommendProduct__list">
-        <li class="recommendProduct__product" aria-label="상품 일번">
-          <a href="/">
-            <figure class="recommendProduct__image">
-              <img src="/images/product01.png" alt="풀무원 탱탱쫄면 네개입 이미지" />
-            </figure>
-          </a>
-          <a class="recommendProduct__name" href="/" aria-label="풀무원 탱탱쫄면 네개입">&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</a>
-          <span class="recommendProduct__price" aria-label="가격 사천구백팔십 원">4&#44;980 원</span>
-          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
-        </li>
-        <li class="recommendProduct__product" aria-label="상품 이번">
-          <a href="/">
-            <figure class="recommendProduct__image">
-              <img src="/images/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" />
-            </figure>
-          </a>
-          <a class="recommendProduct__name" href="/" aria-label="온더바디 죠르디 시카 자석 선쿠션">&#91;온더바디&#93; 죠르디 시카 자석 선쿠션</a>
-          <span class="recommendProduct__price" aria-label="가격 삼이천오백 원">32&#44;500 원</span>
-          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
-        </li>
-        <li class="recommendProduct__product" aria-label="상품 삼번">
-          <a href="/">
-            <figure class="recommendProduct__image">
-              <img src="/images/product03.png" alt="유기농 밀키퀀 현미 이미지" />
-            </figure>
-          </a>
-          <a class="recommendProduct__name" href="/" aria-label="유기농 밀키퀀 현미 4키로그램">유기농 밀키퀀 현미 4kg</a>
-          <span class="recommendProduct__price" aria-label="가격 이만오천 원">25&#44;000 원</span>
-          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
-        </li>
-        <li class="recommendProduct__product" aria-label="상품 사번">
-          <figure class="recommendProduct__image">
-            <img src="/images/product04.png" alt="프로쉬 베이비 세탁세 이미지" />
-          </figure>
-          <a class="recommendProduct__name" href="/" aria-label="프로쉬 베이비 세탁세">&#91;프로쉬&#93; 베이비 세탁세</a>
-          <span class="recommendProduct__sale" aria-label="세일 이십사 퍼센트">24&#37;</span>
-          <span class="recommendProduct__price" aria-label="가격 만팔천구백 원">18&#44;900 원</span>
-          <span class="recommendProduct__beforePrice" aria-hidden="true">24&#44;000 원</span>
-          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
-        </li>
-      </ul>
-      <button class="recommendProduct__rightArrow" aria-label="추천상품 더보기 버튼"></button>
-    </section>
-    <!-- 최근 본 상품 오른쪽 사이드바 -->
-    <aside>
-      <section class="recentProduct">
-        <h2>최근 본 상품</h2>
-        <ul class="recentProduct__list">
-          <li class="recentProduct__item">
-            <a href="/">
-              <img src="/images/product01.png" alt="풀무원 탱탱쫄면 네개입 이미지" />
-            </a>
-          </li>
-          <li class="recentProduct__item">
-            <a href="/">
-              <img src="/images/product04.png" alt="프로쉬 베이비 세탁세 이미지" />
-            </a>
-          </li>
-          <li class="recentProduct__item">
-            <a href="/">
-              <img src="/images/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" />
-            </a>
-          </li>
-        </ul>
-        <button class="recentProduct__buttonUp recentProduct__sprite" aria-label="최근 본 상품 위로가기 버튼"></button>
-        <button class="recentProduct__buttonDown recentProduct__sprite" aria-label="최근 본 상품 아래로가기 버튼"></button>
-      </section>
-    </aside>
-    <!-- 뷰티 플랫폼 광고 팝업창 -->
-    <aside class="mainPopup">
-      <figure>
-        <img src="/images/mainPopup.png" alt="뷰티컬리 광고팝업창" />
-        <figcaption class="a11yHidden">
-          처음 만나는 뷰티 플랫폼 뷰티컬리 지금바로 만나보세요
-        </figcaption>
-      </figure>
-      <button class="mainPopup__closeTodayButton">오늘 하루 안보기</button>
-      <button class="mainPopup__closeButton">닫기</button>
-    </aside>
-  </main>
-
-  <footer>
-    <div class="footerTop">
-      <div class="footerInfo">
-        <div class="customerService">
-          <h3 class="happyCenter">고객행복센터</h3>
-
-          <!-- 기타 문의 -->
-
-          <dl class="numberInquiry">
-            <dt class="a11y">전화문의</dt>
-            <dd class="centerNumber">1644-1107</dd>
-            <dd class="centerTime">월~토요일 오전 7시 ~ 오후 6시</dd>
-          </dl>
-
-          <dl class="kakaoInquiry">
-            <dt class="a11y">카카오톡 문의</dt>
-
-            <dd>
-              월~토요일
-              <span class="dividerCustomer" aria-hidden="true">|</span>
-              오전 7시 ~ 오후 6시<br />
-              일/공휴일
-              <span class="dividerCustomer" aria-hidden="true">|</span>
-              오전 7시 ~ 오후 1시
-            </dd>
-            <dd>
-              <button class="inquiryButton">카카오톡 문의</button>
-            </dd>
-          </dl>
-
-          <dl class="oneononeInquiry">
-            <dt class="a11y">일대일 문의</dt>
-
-            <dd>
-              365일<br />고객센터 운영시간에 순차적으로 답변드리겠습니다.
-            </dd>
-            <dd>
-              <button class="inquiryButton">1:1 문의</button>
-            </dd>
-          </dl>
-
-          <dl class="bulkInquiry">
-            <dt class="a11y">대량주문 문의</dt>
-
-            <dd>
-              월~금요일
-              <span class="dividerCustomer" aria-hidden="true">|</span>
-              오전 9시 ~ 오후 6시<br />
-              점심시간
-              <span class="dividerCustomer" aria-hidden="true">|</span>
-              낮 12시 ~ 오후 1시
-            </dd>
-            <dd>
-              <button class="inquiryButton">대량주문 문의</button>
-            </dd>
-          </dl>
-
-          <!-- </dl> -->
-
-          <!-- 이메일 문의 -->
-          <address class="nonMember">
-            비회원 문의 : <span class="primary">help@karlycorp.com</span><br />
-            비회원 대량주문 문의 :
-            <span class="primary">help@karlycorp.com</span>
-          </address>
-        </div>
-        <div class="about">
-          <ul class="about__nav">
-            <li><a href="/">칼리소개</a></li>
-            <li><a href="/">칼리소개영상</a></li>
-            <li><a href="/">인재채용</a></li>
-            <li><a href="/">이용약관</a></li>
-            <li><a href="/">개인정보처리방침</a></li>
-            <li><a href="/">이용안내</a></li>
-          </ul>
-          <address class="about__info">
-            법인명 (상호) : 주식회사 컬리
-            <span class="dividerAbout" aria-hidden="true">|</span>
-            사업자등록번호 : 261-81-23567
-            <span class="dividerAbout" aria-hidden="true">|</span>
-            <a href="/" class="primary">사업자정보 확인</a><br />
-            통신판매업 : 제 2018-서울강남-01646 호
-            <span class="dividerAbout" aria-hidden="true">|</span>
-            개인정보보호책임자 : 이원준<br />
-            주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)
-            <span class="dividerAbout" aria-hidden="true">|</span>
-            대표이사 : 김슬아<br />
-            입점문의 : 입정문의하기
-            <span class="dividerAbout" aria-hidden="true">|</span>
-            제휴문의 :
-            <span class="primary">business@karlycorp.com</span><br />
-            채용문의 :
-            <span class="primary">recruit@karlycorp.com</span><br />
-            팩스 : 070 - 7500 - 6098
-          </address>
-
-          <ul class="snsContainer">
-            <li><a href="/" class="blog"></a></li>
-            <li><a href="/" class="facebook"></a></li>
-            <li><a href="/" class="instagram"></a></li>
-            <li><a href="/" class="naverPost"></a></li>
-            <li><a href="/" class="youtube"></a></li>
+        <div class="footerCompany">
+          <ul class="companyWrap">
+            <li class="company__list">
+              <a href="/" class="isms">
+                [인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영 (심사받지 않은
+                물리적 인프라 제외) <br />
+                [유효기간] 2022.01.19 - 2025.01.18
+              </a>
+            </li>
+            <li class="company__list">
+              <a href="/" class="privacy">
+                개인정보보호 우수 웹사이트 <br />
+                개인정보처리시스템 인증(ePRIVACY PLUS)
+              </a>
+            </li>
+            <li class="company__list">
+              <a href="/" class="toss">
+                토스페이먼츠 구매 안전(에스크로) 서비스를 이용하실 수 있습니다.
+              </a>
+            </li>
+            <li class="company__list">
+              <a href="/" class="woori">
+                고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보증
+                계약을 체결하여 안전거래를 보장하고 있습니다.
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="footerCompany">
-        <ul class="companyWrap">
-          <li class="company__list">
-            <a href="/" class="isms">
-              [인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영 (심사받지 않은
-              물리적 인프라 제외) <br />
-              [유효기간] 2022.01.19 - 2025.01.18
-            </a>
-          </li>
-          <li class="company__list">
-            <a href="/" class="privacy">
-              개인정보보호 우수 웹사이트 <br />
-              개인정보처리시스템 인증(ePRIVACY PLUS)
-            </a>
-          </li>
-          <li class="company__list">
-            <a href="/" class="toss">
-              토스페이먼츠 구매 안전(에스크로) 서비스를 이용하실 수 있습니다.
-            </a>
-          </li>
-          <li class="company__list">
-            <a href="/" class="woori">
-              고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보증
-              계약을 체결하여 안전거래를 보장하고 있습니다.
-            </a>
-          </li>
-        </ul>
+
+      <div class="footerBottom">
+        <span
+          >마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가
+          판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</span
+        >
+        <span
+          >마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서
+          통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불
+          등 의무와 책임을 부담하지 않습니다.</span
+        >
+        <small>&copy; KURLY CORP. ALL RIGHTS RESERVED</small>
       </div>
-    </div>
-
-    <div class="footerBottom">
-      <span>마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가
-        판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</span>
-      <span>마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서
-        통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불
-        등 의무와 책임을 부담하지 않습니다.</span>
-      <small>&copy; KURLY CORP. ALL RIGHTS RESERVED</small>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
