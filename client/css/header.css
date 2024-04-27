@@ -1,0 +1,137 @@
+header {
+  @apply flex items-stretch justify-center text-[#333333] shadow-[0px_0px_24px_0px_rgba(0,0,0,0.1)];
+  flex-flow: column nowrap;
+  font-family: Pretendard;
+  overflow: hidden;
+}
+.divider {
+  @apply text-xs text-[#E1E1E1];
+  padding: 0 6px;
+}
+.bold {
+  @apply font-bold;
+}
+.header_container {
+  @apply relative;
+  flex-flow: column nowrap;
+  width: 1050px;
+  margin: 0px auto;
+}
+.search_container {
+  @apply flex items-center justify-between pb-2.5 pt-10;
+  flex-flow: row nowrap;
+}
+.logo_container {
+  @apply flex items-center justify-start;
+  flex-flow: row nowrap;
+  gap: 1.85rem;
+}
+.logo_karly {
+  @apply block h-[2.8125rem] w-20;
+  background: url("../assets/images/logo2.svg") no-repeat;
+}
+
+.switch_box {
+  @apply relative flex items-center justify-start text-lg font-bold;
+  flex-flow: row nowrap;
+  gap: 0.45rem;
+}
+.market_link {
+  @apply text-[#5F0080];
+}
+.beauty_link {
+  @apply text-[#898989] after:absolute after:right-[-15px] after:top-[-5px] after:block after:h-[7px] after:w-[7px] after:content-[""];
+}
+.beauty_link::after {
+  background: url("../assets/images/Icon/new.svg");
+}
+
+.search_form_container {
+  @apply mr-[120px];
+}
+.search_form {
+  @apply flex w-[400px] items-center justify-between rounded-[6px] border-[1.5px] border-solid border-[#5F0080] pl-[15px] text-lg;
+  flex-flow: row nowrap;
+}
+
+.search_form_input {
+  @apply w-80 border-0 py-2.5;
+}
+.search_icon {
+  @apply block h-[2.1875rem] w-10 cursor-pointer border-0;
+  background: url("/client/assets/images/Icon/Search.svg") no-repeat;
+}
+
+.member_icon {
+  @apply flex items-stretch justify-start gap-[30px];
+  flex-flow: row nowrap;
+}
+
+.location_icon {
+  @apply block h-[1.9375rem] w-8;
+  background: url("../assets/images/Icon/Location.svg") no-repeat;
+}
+
+.black_cart_icon {
+  @apply block h-[1.9375rem] w-8;
+  background: url("../assets/images/Icon/Cart.svg") no-repeat;
+}
+
+.heart_icon {
+  @apply block h-[1.9375rem] w-8;
+  background: url("../assets/images/Icon/Heart.svg") no-repeat;
+}
+
+.header_nav {
+  @apply flex items-center justify-between py-5;
+  flex-flow: row nowrap;
+}
+.header_nav_list {
+  @apply flex w-[700px] items-stretch justify-around font-semibold;
+  flex-flow: row nowrap;
+}
+.header_nav_button {
+  @apply translate-y-px border-0 font-bold before:mr-2.5 before:inline-block before:h-3.5 before:w-4 before:content-[""];
+  background: #ffffff;
+}
+.header_nav_button::before {
+  background: url("../assets/images/Icon/Hamburger_black.png") no-repeat;
+}
+.morning_star_delivery {
+  @apply block rounded-[20px] border border-solid border-[#A6A6A6] px-2 py-1.5 text-xs text-[#A6A6A6];
+}
+.morning_star_delivery_color {
+  @apply text-[#5F0080];
+}
+
+.header_banner {
+  @apply -order-1 flex items-center justify-end px-[20%] py-2 text-white;
+  flex-flow: row nowrap;
+  background: #5f0080;
+}
+.header_banner_link {
+  @apply block grow text-center text-sm;
+}
+
+.header_banner_button {
+  background: url("../assets/images/Icon/Close.png") no-repeat;
+  @apply block h-[1.875rem] w-[1.875rem] border-0;
+}
+
+.member_only {
+  @apply absolute right-[0%] top-[5%] flex items-center justify-evenly;
+  flex-flow: row nowrap;
+}
+.member_only_list {
+  @apply text-xs font-semibold;
+}
+.member_sign_up {
+  @apply text-[#5F0080];
+}
+.member_custermer_center::after {
+  @apply ml-[5px] inline-block h-1.5 w-2 translate-y-[-3px] content-[""];
+  background: url("../assets/images/Icon/down.svg");
+}
+.best_link{
+  color: rgb(95, 0, 128);;
+}

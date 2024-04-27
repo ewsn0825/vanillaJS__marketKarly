@@ -46,7 +46,7 @@ export function toggleClass(node,className){
 
 
 
-function getCss(node,prop){
+export function getCss(node,prop){
   if(typeof node === 'string'){
     node = getNode(node);
   }
@@ -61,7 +61,7 @@ function getCss(node,prop){
 // jQuery
 
 // 대상에게 원하는 css 속성을 추가 = set
-function setCss(node,prop,value){
+export function setCss(node,prop,value){
   if(typeof node === 'string'){
     node = getNode(node);
   }

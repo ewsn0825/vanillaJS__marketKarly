@@ -1,0 +1,137 @@
+.product_detail {
+  @apply relative mx-auto box-border w-[65.625rem] px-0 py-[3.75rem] text-base;
+  font-family: Pretendard;
+}
+.product_detail_title_box {
+  @apply ml-[480px] flex flex-col flex-nowrap items-stretch justify-start gap-y-4;
+}
+.product_detail_star_delivery {
+  @apply -order-1 text-[1.3125rem] font-extrabold text-[#6b6b6b];
+}
+.product_detail_title {
+  @apply text-[1.6875rem] font-bold;
+}
+.product_detail_sub_title {
+  @apply leading-[160%] text-[#898989];
+}
+.product_detail_productcart,
+.product_detail_list,
+.product_detail_titleBox {
+  @apply ml-[480px];
+}
+
+.product_detail_image {
+  @apply absolute top-[60px] ml-0 h-[510px] w-[400px];
+}
+
+.product_detail_KRW {
+  @apply font-bold leading-[140%] text-[#2b2b2b];
+}
+.product_detail_purple_span {
+  @apply mb-5 font-semibold leading-[150%] text-[#5f0080];
+  font-family: Pretendard;
+}
+.product_detail_item {
+  @apply flex border-t border-solid border-t-[#e1e1e1] py-4 text-xs last:border-b last:border-solid last:border-b-[#e1e1e1];
+}
+.product_detail_item dt {
+  @apply w-32;
+}
+.product_detail_item .product_detail_font_bold {
+  @apply mb-2.5 w-32 leading-[150%] text-neutral-700;
+}
+.product_detail_item dd {
+  @apply text-[#6b6b6b];
+  display: span;
+}
+.product_detail_allergy_info {
+  @apply block w-[27rem];
+}
+.product_detail_select {
+  @apply relative h-[5.1875rem] w-[27rem] border border-solid border-[#e1e1e1] p-3 font-semibold text-[#565656];
+}
+.product_detail_select_price {
+  @apply absolute bottom-3 right-3 text-[0.9375rem] font-bold;
+}
+.product_detail_select_box {
+  @apply mt-3 h-[1.875rem] w-[5.1875rem] border border-solid border-[#c4c4c4] text-center;
+}
+.product_detail_plus {
+  @apply float-right h-[30px] w-7 cursor-pointer bg-[50%_17%];
+}
+.product_detail_minus {
+  @apply float-left h-[30px] w-7 cursor-pointer border-[none] bg-[50%_87%];
+}
+.product_detail_select_count {
+  @apply inline-block translate-y-2 px-0 py-[auto] font-extrabold;
+}
+.product_detail_all_price {
+  @apply mt-7 flex items-center justify-end gap-x-[1.0625rem] text-base font-semibold leading-[150%];
+  flex-flow: row nowrap;
+}
+.product_detail_point {
+  @apply mb-7 mt-[0.5625rem] text-end text-base font-semibold;
+}
+.product_detail_point_icon {
+  @apply mr-[3px] h-6 w-[2.125rem] rounded-xl px-2 py-1 text-center text-[10px] leading-[160%] text-white;
+  background: #fa622f;
+}
+.product_detail_all_button {
+  @apply flex items-stretch justify-between;
+  flex-flow: row nowrap;
+}
+.product_detail_button {
+  @apply h-14 w-14 cursor-pointer border border-solid border-[#e1e1e1] p-1;
+}
+.product_detail_heart {
+  background: url(../assets/productDetail/like.png) no-repeat;
+  background-size: cover;
+}
+.product_detail_alarm {
+  background: url(../assets/productDetail/ball.png) no-repeat;
+  background-size: cover;
+}
+.product_detail_cart_button {
+  @apply mb-12 h-[3.375rem] w-[26.875rem] cursor-pointer rounded-md font-semibold text-black;
+}
+.product_detail_list .product_detail_item {
+  @apply flex;
+}
+
+/* -------------------------------- */
+.description {
+  @apply relative mx-auto flex w-[65.625rem] items-stretch justify-start text-base;
+  font-family: Pretendard;
+  flex-flow: column-reverse nowrap;
+}
+.description_image img {
+  @apply mt-10 w-full;
+}
+.description_title_box {
+  @apply flex items-stretch justify-start border-b border-solid border-b-[#e1e1e1] p-[4.75rem] text-center text-[#101010];
+  flex-flow: column nowrap;
+}
+.description_sub_title {
+  @apply text-[1.776875rem] font-semibold leading-[150%];
+}
+.description_title {
+  @apply text-[3.1573125rem] font-bold leading-[140%];
+}
+
+.description_check_point_title {
+  @apply mx-auto mb-[4.375rem] block w-[32.5rem] -translate-y-10 bg-white text-[3.1573125rem] font-bold leading-[140%];
+}
+.description__detail_first_image {
+  @apply mb-24;
+}
+.description_button {
+  @apply float-left h-[3.375rem] w-3/12 cursor-pointer rounded-none border border-solid border-[#c4c4c4] text-base font-semibold leading-[150%];
+  background: #f9f9f9;
+}
+.description_button span {
+  @apply pl-[0.3125rem] text-[0.7501875rem] leading-[160%];
+}
+.description_button_purple {
+  @apply border border-solid border-[#e0e0e0] text-[#5f0080];
+  background: #ffffff;
+}

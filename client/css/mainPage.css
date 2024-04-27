@@ -1,0 +1,127 @@
+.main_page_container {
+  @apply relative m-0 w-full;
+  font-family: Pretendard;
+}
+.main_page_container .main_banner {
+  @apply relative overflow-hidden p-0;
+}
+.main_banner_image {
+  @apply w-full;
+}
+.main_banner_page {
+  @apply absolute right-[22%] top-[87%] z-20 h-5 w-[60px] rounded-xl p-[auto] text-center text-[0.8125rem] font-semibold text-white;
+  background: rgba(0, 0, 0, 0.15);
+}
+/* .main_banner_button {
+  @apply cursor-pointer absolute w-[3.25rem] h-[3.25rem] z-20 opacity-0 transition-opacity duration-[50ms] ease-[ease-in-out] rounded-[50%] border-0 top-[40%];
+  background: rgba(0, 0, 0, 0.1) url('../assets/images/Icon/Arrow.png');
+} */
+.main_banner_right_arrow {
+  @apply right-[17%] -scale-x-100;
+}
+.main_banner_left_arrow {
+  @apply left-[17%];
+}
+.recommend_today {
+  @apply relative mx-auto box-border w-[65.625rem] px-0 py-[4.375rem];
+}
+.recommend_today_title {
+  @apply mb-[1.875rem] px-0 py-[0.9375rem] text-center text-[1.6875rem] font-bold;
+}
+.recommend_today_list {
+  @apply flex items-stretch justify-between overflow-hidden pl-0;
+  list-style: none;
+  flex-flow: row nowrap;
+}
+
+
+.recommend_today_image{
+  @apply w-[15.5rem] h-[20rem] overflow-hidden
+}
+.recommend_today_product {
+  @apply relative h-[27.625rem] w-[15.5625rem];
+}
+.recommend_today_name {
+  @apply block px-0 py-[1.125rem] text-sm text-[#101010] no-underline;
+}
+.recommend_today_price {
+  @apply text-[1.375rem] font-semibold;
+}
+.recommend_today_sale {
+  @apply text-[1.375rem] font-bold text-[orangered];
+}
+.recommend_today_before_price {
+  @apply mt-4 block text-[0.8125rem] text-[#a6a6a6] line-through;
+}
+
+/* .recommend_today_cart{
+
+} */
+
+.recommend_today_cart {
+  cursor: pointer;
+  position: absolute;
+  bottom: 31%;
+  right: 5%;
+  background: #2a0038 url("../assets/icon/Cart_white.svg");
+  background-position: center;
+  opacity: 50%;
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 50%;
+  border: 0;
+}
+
+.recommend_left_arrow {
+  @apply left-[-2.5%] -scale-x-100;
+}
+.recommend_right_arrow {
+  @apply right-[17%];
+}
+
+.good_price_left_arrow {
+  @apply left-[-2.5%] -scale-x-100;
+}
+.good_price_right_arrow {
+  @apply right-[17%];
+}
+
+.line_banner {
+  @apply mx-auto my-10 w-[65.625rem] p-0;
+}
+.recent_viewed {
+  @apply fixed right-[2%] top-2/4 z-20 box-border h-[13.9375rem] w-[4.625rem] border border-solid border-[#c4c4c4] px-0 py-[2.1875rem] text-center text-[0.4375rem];
+  /* position: relative; */
+  background: #ffffff;
+}
+.recent_viewed img {
+  @apply w-full;
+}
+.recent_viewed_list {
+  @apply mx-auto mt-2.5 h-[8.0625rem] w-10 gap-y-0.5 overflow-hidden p-0;
+  list-style: none;
+}
+.recent_viewed_sprite {
+  @apply absolute h-[1.125rem] w-[1.125rem] cursor-pointer border-[none];
+  background: url("../assets/images/Icon/Arrow-2.png");
+}
+.recent_viewed_up {
+  @apply right-[37%] top-[4%] bg-[50%_10%];
+}
+.recent_viewed_down {
+  @apply bottom-[4%] right-[37%] bg-[50%_35%];
+}
+.main_popup {
+  @apply absolute -top-1 left-24 z-20 h-[33.125rem] w-[21.5625rem] rounded-2xl font-bold text-[#333333] shadow-[0_0.5rem_2.25rem_0_#c4c4c4];
+  background: #ffffff;
+}
+.main_popup img {
+  @apply rounded-[1rem_1rem_0_0];
+}
+.main_popup .main_popup_close_button {
+  @apply border-l-[#e1e1e1] border-l-[solid];
+}
+button[class*="main_popup_close"] {
+  @apply m-0 inline-block h-[3.75rem] w-[49%] cursor-pointer border-0;
+  background: transparent;
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>마켓칼리 베스트</title>
+
+  <link rel="icon" href="../assets/favicon/karly.jpg"> 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="../js/productList/productList.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header_container">
+      <!-- 서치박스 영역 -->
+      <div class="search_container">
+        <!-- logo css에서 백그라운드 이미지 처리-->
+        <div class="logo_container">
+          <h1 aria-label="마켓칼리">
+            <a href="./main.html" class="logo_karly"></a>
+          </h1>
+          <!-- N 이미지 처리 해주어야함 -->
+
+          <div class="switch_box">
+            <a href="/" class="market_link">마켓칼리</a>
+            <span class="divider" aria-hidden="true">|</span>
+            <a href="/" class="beauty_link">뷰티칼리</a>
+          </div>
+        </div>
+        <!-- 검색 영역 -->
+
+        <div class="search_form_container">
+          <form action="/" class="search_form" method="post">
+            <label for="search" class="sr-only">검색어</label>
+            <input
+              type="search"
+              id="search"
+              class="search_form_input"
+              required
+              placeholder="검색어를 입력해주세요"
+            />
+
+            <button type="submit" class="search_icon search_button"></button>
+          </form>
+        </div>
+
+        <!-- 아이콘 영역 -->
+        <ul class="member_icon">
+          <li>
+            <a href="/" aria-label="배송지 설정" class="location_icon"></a>
+          </li>
+          <li><a href="/" aria-label="찜하기" class="heart_icon"></a></li>
+          <li>
+            <a
+              href="./Cart.html"
+              aria-label="장바구니"
+              class="black_cart_icon"
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 네비게이션 영역 -->
+      <nav class="header_nav" role="navigation">
+        <!-- 햄버거 버튼 카테고리 -->
+        <button type="button" class="header_nav_button">카테고리</button>
+        <ul class="header_nav_list">
+          <li><a href="/">신상품</a></li>
+          <li><a href="./productList.html" class="best_link">베스트</a></li>
+          <li><a href="/">알뜰쇼핑</a></li>
+          <li><a href="/">특가/혜택</a></li>
+        </ul>
+
+        <a href="/" class="morning_star_delivery">
+          <span class="morning_star_delivery_color">샛별&#183;낮 </span
+          >배송안내
+        </a>
+      </nav>
+
+      <!-- 회원가입 영역 -->
+      <ul class="member_only">
+        <li class="member_only_list">
+          <a href="./register.html" class="member_sign_up">회원가입</a>
+        </li>
+        <li class="member_only_list">
+          <span class="divider" aria-hidden="true">ㅣ</span>
+          <a href="./login.html" class="member_sign_in">로그인</a>
+        </li>
+        <li class="member_only_list">
+          <span class="divider" aria-hidden="true">ㅣ</span>
+          <a href="/" class="member_custermer_center">고객센터</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header_banner">
+      <a class="header_banner_link" href="/"
+        >지금 가입하고 인기상품 <span class="bold">100원</span>에
+        받아가세요!</a
+      >
+      <button type="button" class="header_banner_button"></button>
+    </div>
+  </header>
+
+  <main class="main_container">
+
+    <h2 class="a11y">main</h2>
+
+    <h3 class="product_list_title">베스트</h3>
+
+    <div class="product_container">
+
+      <!-- 사이드바 -->
+
+      <div class="side_bar" role="gro_up" aria-label="사이드바 메뉴">
+
+        <div class="side_bar_button" aria-label="사이드바 필터">
+          <span>필터</span>
+          <a href="javascript:void(0)" class="reset_button">초기화</a>
+        </div>
+
+        <button class="side_bar_button" type="button">
+          <span>카테고리</span>
+          <span class="arrow_bottom"></span>
+        </button>
+
+        <button class="side_bar_button side_bar_button_clicked" type="button">
+          <span class="current_brand">브랜드</span>
+          <span class="arrow_top"></span>
+        </button>
+        <ul class="brand" aria-label="브랜드별 상품 보기">
+          <li class="brand_list"><a href="javascript:void(0)" class="brand_link">감자밭<span class="gray_num" aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="javascript:void(0)" class="brand_link">강남면옥<span class="gray_num" aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="javascript:void(0)" class="brand_link">경남제약<span class="gray_num" aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="javascript:void(0)" class="brand_link">경복궁<span class="gray_num" aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="javascript:void(0)" class="brand_link">고래사<span class="gray_num" aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="javascript:void(0)" class="brand_link">고메공방<span class="gray_num" aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="javascript:void(0)" class="brand_link">고온어다이어트<span class="gray_num" aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="javascript:void(0)" class="brand_link">교토마블<span class="gray_num" aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="javascript:void(0)" class="brand_link">그래놀라 하우스<span class="gray_num" aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="javascript:void(0)" class="brand_link">그리츠 시그니처 램<span class="gray_num" aria-hidden="true">1</span></a></li>
+          <li class="button_list"><button type="button" class="more_button">브랜드 더보기</button></li>
+        </ul>
+
+        <button class="side_bar_button" type="button">
+          <span>가격</span>
+          <span class="arrow_bottom"></span>
+        </button>
+
+        <button class="side_bar_button" type="button">
+          <span>혜택</span>
+          <span class="arrow_bottom"></span>
+        </button>
+
+        <button class="side_bar_button" type="button">
+          <span>유형</span>
+          <span class="arrow_bottom"></span>
+        </button>
+
+        <button class="side_bar_button" type="button">
+          <span>특정상품 제외</span>
+          <span class="arrow_bottom"></span>
+        </button>
+
+      </div>
+
+
+
+      <!-- 프로덕트 영역 -->
+      <div class="product">
+
+        <div class="menu_container" role="menu" aria-label="베스트 상품 메뉴바">
+          <span class="bold_main">총 284건</span>
+          <ul class="menu_wrap">
+            <li><a href="javascript:void(0)" class="recommend"><span class="bold_main">추천순</span></a></li>
+            <li><span class="list_divider" aria-hidden="true">ㅣ</span>
+              <a href="javascript:void(0)" class="/">신상품순</a>
+            </li>
+            <li><span class="list_divider" aria-hidden="true">ㅣ</span>
+              <a href="javascript:void(0)" class="/">판매량순</a>
+            </li>
+            <li><span class="list_divider" aria-hidden="true">ㅣ</span>
+              <a href="javascript:void(0)" class="/">혜택순</a>
+            </li>
+            <li><span class="list_divider" aria-hidden="true">ㅣ</span>
+              <a href="javascript:void(0)" class="/">낮은 가격순</a>
+            </li>
+            <li><span class="list_divider" aria-hidden="true">ㅣ</span>
+              <a href="javascript:void(0)" class="/">높은 가격순</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product_line" aria-label="상품정보" role="gro_up">
+          <ul class="product_wrap">
+          </ul>
+          <div class="move_page">
+            <ul class="move_page_wrap">
+              <li class="move_page_list disabled"><button type="button" class="first_page">
+                  <span class="double_left"></span>
+                  <span class="a11y">처음 페이지로 가기</span>
+                </button></li>
+              <li class="move_page_list disabled"><button type="button" class="previous_page">
+                  <span class="left"></span>
+                  <span class="a11y">이전 페이지로 가기</span>
+                </button></li>
+              <li class="move_page_list"><button class="pagination-button" type="button" data-page="1">
+                  <span class="page_num current_num">1</span>
+                  <span class="a11y">페이지</span>
+                </button></li>
+              <li class="move_page_list"><button class="pagination-button" type="button" data-page="2">
+                  <span class="page_num">2</span>
+                  <span class="a11y">페이지</span>
+                </button></li>
+
+              <li class="move_page_list"><button class="pagination-button" type="button" data-page="3">
+                  <span class="page_num">3</span>
+                  <span class="a11y">페이지</span>
+                </button></li>
+              <li class="move_page_list"><button type="button" class="next_page">
+                  <span class="right"></span>
+                  <span class="a11y">다음 페이지로 가기</span>
+                </button></li>
+              <li class="move_page_list"><button type="button" class="end_page">
+                  <span class="double_right"></span>
+                  <span class="a11y">맨 뒤 페이지로 가기</span>
+                </button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+          <!-- 최근 본 상품 오른쪽 사이드바 -->
+          <aside>
+
+            <section class="recent_product_viewed">
+              <h2>최근 본 상품</h2>
+              <div class="recent_product_viewed_box">
+                <ul class="recent_product_viewed_list">
+                  <li class="recent_product_viewed_item recent_product_viewed_item_defalt">
+                    <a class="recent_product_viewed_link"><img src="http://localhost:5500/assets/icecream/thumbnail.jpg"></a>
+                  </li>
+                  <li class="recent_product_viewed_item recent_product_viewed_item_defalt">
+                    <a class="recent_product_viewed_link"><img src="http://localhost:5500/assets/wetTissue/thumbnail.jpg"></a>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="recent_product_viewed_up recent_product_viewed_sprite" aria-label="최근 본 상품 위로가기 버튼"></button>
+              <button class="recent_product_viewed_down recent_product_viewed_sprite" aria-label="최근 본 상품 아래로가기 버튼" ></button>
+            </section>
+          </aside>
+  </main>
+  <footer>
+    <div class="footer_top">
+      <div class="footer_info">
+        <div class="customer_service">
+          <h3 class="customer_center">고객행복센터</h3>
+
+          <!-- 기타 문의 -->
+
+          <dl class="number_inquiry">
+            <dt class="sr-only">전화문의</dt>
+            <dd class="center_number">1644-1107</dd>
+            <dd class="center_time">월~토요일 오전 7시 ~ 오후 6시</dd>
+          </dl>
+
+          <dl class="kakao_inquiry">
+            <dt class="sr-only">카카오톡 문의</dt>
+
+            <dd>
+              월~토요일
+              <span class="divider_inquiry" aria-hidden="true">|</span>
+              오전 7시 ~ 오후 6시<br />
+              일/공휴일
+              <span class="divider_inquiry" aria-hidden="true">|</span>
+              오전 7시 ~ 오후 1시
+            </dd>
+            <dd>
+              <button class="inquiry_button">카카오톡 문의</button>
+            </dd>
+          </dl>
+
+          <dl class="one_on_one_inquiry">
+            <dt class="sr-only">일대일 문의</dt>
+
+            <dd>
+              365일<br />고객센터 운영시간에 순차적으로 답변드리겠습니다.
+            </dd>
+            <dd>
+              <button class="inquiry_button">1:1 문의</button>
+            </dd>
+          </dl>
+
+          <dl class="bulk_inquiry">
+            <dt class="sr-only">대량주문 문의</dt>
+
+            <dd>
+              월~금요일
+              <span class="divider_inquiry" aria-hidden="true">|</span>
+              오전 9시 ~ 오후 6시<br />
+              점심시간
+              <span class="divider_inquiry" aria-hidden="true">|</span>
+              낮 12시 ~ 오후 1시
+            </dd>
+            <dd>
+              <button class="inquiry_button">대량주문 문의</button>
+            </dd>
+          </dl>
+
+          <!-- </dl> -->
+
+          <!-- 이메일 문의 -->
+          <div class="non_member">
+            비회원 문의 : <span class="primary">help@karlycorp.com</span
+            ><br />
+            비회원 대량주문 문의 :
+            <span class="primary">help@karlycorp.com</span>
+          </div>
+        </div>
+
+        <div class="about">
+          <ul class="about_nav">
+            <li><a href="/">칼리소개</a></li>
+            <li><a href="/">칼리소개영상</a></li>
+            <li><a href="/">인재채용</a></li>
+            <li><a href="/">이용약관</a></li>
+            <li><a href="/">개인정보처리방침</a></li>
+            <li><a href="/">이용안내</a></li>
+          </ul>
+          <div class="about_info">
+            법인명 (상호) : 주식회사 컬리
+            <span class="divider_about" aria-hidden="true">|</span>
+            사업자등록번호 : 261-81-23567
+            <span class="divider_about" aria-hidden="true">|</span>
+            <a href="/" class="primary">사업자정보 확인</a><br />
+            통신판매업 : 제 2018-서울강남-01646 호
+            <span class="divider_about" aria-hidden="true">|</span>
+            개인정보보호책임자 : 이원준<br />
+            주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)
+            <span class="divider_about" aria-hidden="true">|</span>
+            대표이사 : 김슬아<br />
+            입점문의 : 입정문의하기
+            <span class="divider_about" aria-hidden="true">|</span>
+            제휴문의 :
+            <span class="primary">business@karlycorp.com</span><br />
+            채용문의 :
+            <span class="primary">recruit@karlycorp.com</span><br />
+            팩스 : 070 - 7500 - 6098
+          </div>
+
+          <ul class="sns_box">
+            <li><a href="/" class="blog"></a></li>
+            <li><a href="/" class="facebook"></a></li>
+            <li><a href="/" class="instagram"></a></li>
+            <li><a href="/" class="naverPost"></a></li>
+            <li><a href="/" class="youtube"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="company">
+        <ul class="company_wrap">
+          <li class="company_list">
+            <a href="/" class="isms">
+              [인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영 (심사받지 않은
+              물리적 인프라 제외) <br />
+              [유효기간] 2022.01.19 - 2025.01.18
+            </a>
+          </li>
+          <li class="company_list">
+            <a href="/" class="privacy">
+              개인정보보호 우수 웹사이트 <br />
+              개인정보처리시스템 인증(ePRIVACY PLUS)
+            </a>
+          </li>
+          <li class="company_list">
+            <a href="/" class="toss">
+              토스페이먼츠 구매 안전(에스크로) 서비스를 이용하실 수 있습니다.
+            </a>
+          </li>
+          <li class="company_list">
+            <a href="/" class="woori">
+              고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보증
+              계약을 체결하여 안전거래를 보장하고 있습니다.
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <span
+        >마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가
+        판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</span
+      >
+      <span
+        >마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서
+        통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불
+        등 의무와 책임을 부담하지 않습니다.</span
+      >
+      <small>&copy; KURLY CORP. ALL RIGHTS RESERVED</small>
+    </div>
+  </footer>
+</body>

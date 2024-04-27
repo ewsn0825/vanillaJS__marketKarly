@@ -1,0 +1,285 @@
+
+
+
+footer {
+  font-family: Pretendard;
+  color: #333333;
+  border-top: 1px solid #E1E1E1;
+}
+
+/* icon */
+.blog {
+  background: url("../assets/images/Icon/Blog.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+}
+
+.facebook {
+  background: url("../assets/images/Icon/FaceBook.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+}
+
+.instagram {
+  background: url("../assets/images/Icon/Instagram.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+}
+
+.naverPost {
+  background: url("../assets/images/Icon/NaverPost.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+}
+
+.youtube {
+  background: url("../assets/images/Icon/Youtube.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+}
+
+/* button */
+
+.inquiry_button {
+  cursor: pointer;
+  background: white;
+  border: 1px solid #C4C4C4;
+  width: 8.75rem;
+  height: 2.5rem;
+}
+
+/* footer */
+
+.divider_inquiry {
+  color: #333333;
+  font-size: 16px;
+}
+
+.divider_about {
+  color: #333333;
+  font-size: 10px;
+}
+
+
+.footer_top {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.footer_info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 28px 0px 32px 0px;
+}
+
+.customer_service {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.customer_center {
+  font-size: 21.328px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.center_number {
+  font-size: 37.897px;
+  font-weight: 700;
+}
+
+.center_time {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.number_inquiry {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.kakao_inquiry {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  line-height: 26px;
+}
+
+.one_on_one_inquiry {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  line-height: 26px;
+}
+
+.bulk_inquiry {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  line-height: 26px;
+}
+
+.non_member {
+  font-size: 10px;
+}
+
+.about {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 28px;
+}
+.about_nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+}
+.about_info {
+  font-size: 10px;
+  line-height: 18px;
+}
+
+.primary {
+  color: #5F0080;
+  font-weight: bold;
+}
+
+.sns_box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.company {
+  border-top: 1px solid #E1E1E1;
+}
+
+.company_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 0px 32px 0px;
+  font-size: 0.625rem;
+  line-height: 16px;
+  gap: 24px;
+}
+
+.company_list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.isms {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.isms::before {
+  content: "";
+  display: block;
+  background: url("../assets/images/logo_isms.png") no-repeat;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.privacy {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.privacy::before {
+  content: "";
+  display: block;
+  background: url("../assets/images/logo_privacy.png") no-repeat;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.woori {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.woori::before {
+  content: "";
+  display: block;
+  background: url("../assets/images/logo_wooriBank.png") no-repeat;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.toss {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.toss::before {
+  content: "";
+  display: block;
+  background: url("../assets/images/logo_tosspayments.png") no-repeat;
+  width: 105px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.footer_bottom {
+  background: #F9F9F9;
+  font-size: 0.625rem;
+  color: #898989;
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer_bottom span {
+  line-height: 180%;
+}
+.footer_bottom small {
+  line-height: 160%;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}

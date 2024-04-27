@@ -1,12 +1,203 @@
 {
   "products": [
     {
-      "id": "product-rksk",
+      "id": "product-apple",
+      "name": "썸머킹 사과 1.3kg (4~8입)",
+      "description": "여름에 만나는 풋풋한 매력",
+      "price": "12,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "apple/thumbnail.jpg",
+        "view": "apple/detail_view.jpg",
+        "banner": "apple/detail_banner.jpg",
+        "info": "apple/detail_info.jpg",
+        "alt": "사과"
+      },
+      "stock": 5
+    },
+    {
+      "id": "product-banana",
+      "name": "[KF365] DOLE 실속 바나나 1kg (필리핀)",
+      "description": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+      "price": "3,190",
+      "saleRatio": "17",
+      "salePrice": "3,890",
+      "image": {
+        "thumbnail": "banana/thumbnail.jpg",
+        "view": "banana/detail_view.jpg",
+        "banner": "banana/detail_banner.jpg",
+        "info": "banana/detail_info.jpg",
+        "alt": "바나나"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only"
+    },
+    {
+      "id": "product-oatmeal",
+      "name": "[플라하반] 오트밀 5종 (택1)",
+      "description": "고급 아이리쉬 귀리로 만든 오트밀 [신제품 입고]",
+      "price": "7,300",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "oatmeal/thumbnail.jpg",
+        "view": "oatmeal/detail_view.jpg",
+        "banner": "oatmeal/detail_banner.jpg",
+        "info": "oatmeal/detail_info.jpg",
+        "alt": "플라하반 오트밀 5종 택1"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-bacon",
+      "name": "[Kalry's] 한돈 삼겹 베이컨",
+      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
+      "price": "4,500",
+      "saleRatio": 7,
+      "salePrice": "4,185",
+      "image": {
+        "thumbnail": "bacon/thumbnail.jpg",
+        "view": "bacon/detail_view.jpg",
+        "banner": "bacon/detail_banner.jpg",
+        "info": "bacon/detail_info.jpg",
+        "alt": "칼리 한돈 삼겹 베이컨"
+      },
+      "stock": 13,
+      "badge_karly": "karly _only"
+    },
+    {
+      "id": "product-wetTissue",
+      "id": "product-wetTissue",
+      "name": "[Kurly's] 데일리 물티슈(100매 X 10팩)",
+      "description": "믿고 쓰는 우리 집 물티슈",
+      "price": "11,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "wetTissue/thumbnail.jpg",
+        "view": "wetTissue/detail_view.jpg",
+        "banner": "wetTissue/detail_banner.jpg",
+        "info": "wetTissue/detail_info.jpg",
+        "alt": "물티슈"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only"
+    },
+    {
+      "id": "product-egg",
+      "name": "[KF365] 1+등급 무항생제 특란 20구",
+      "description": "1구 당 판매가: 365원",
+      "price": "7,300",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "egg/thumbnail.jpg",
+        "view": "egg/detail_view.jpg",
+        "banner": "egg/detail_banner.jpg",
+        "info": "egg/detail_info.jpg",
+        "alt": "무항생제 특란"
+      },
+      "stock": 5,
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-springRoll",
+      "name": "[도리깨침] 월남쌈 밀키트",
+      "description": "풍성한 재료에 담긴 다채로운 맛",
+      "price": "20,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "springRoll/thumbnail.jpg",
+        "view": "springRoll/detail_view.jpg",
+        "banner": "springRoll/detail_banner.jpg",
+        "info": "springRoll/detail_info.jpg",
+        "alt": "월남쌈"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-rice",
+      "name": "조선향미 8kg",
+      "description": "삼시세끼 넉넉하게 즐길 수 있는 고품격 쌀밥 22년산쌀",
+      "price": "45,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "rice/thumbnail.jpg",
+        "view": "rice/detail_view.jpg",
+        "banner": "rice/detail_banner.jpg",
+        "info": "rice/detail_info.jpg",
+        "alt": "조선향미 8kg"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-tomato",
+      "name": "[KF365] 완숙토마토 2kg",
+      "description": "최대혜택가 : 8,720원",
+      "price": "11,900",
+      "saleRatio": "8",
+      "salePrice": "10,900",
+      "image": {
+        "thumbnail": "tomato/thumbnail.jpg",
+        "view": "tomato/detail_view.jpg",
+        "banner": "tomato/detail_banner.jpg",
+        "info": "tomato/detail_info.jpg",
+        "alt": "토마토"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-dessicant",
+      "name": "[생활공작소] 옷걸이형 제습제 2종 (택1)",
+      "description": "얇고 슬림한 옷걸이형 대용량 제습제",
+      "price": "15,900",
+      "saleRatio": "18",
+      "salePrice": "12,900",
+      "image": {
+        "thumbnail": "dessicant/thumbnail.jpg",
+        "view": "dessicant/detail_view.jpg",
+        "banner": "dessicant/detail_banner.jpg",
+        "info": "dessicant/detail_info.jpg",
+        "alt": "옷걸이형 제습제"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-icecream",
+      "name": "[하겐다즈] 파인트 클래식 아이스크림 8종 (택1)",
+      "description": "고르는 재미, 나누는 기쁨",
+      "price": "15,500",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "icecream/thumbnail.jpg",
+        "view": "icecream/detail_view.jpg",
+        "banner": "icecream/detail_banner.jpg",
+        "info": "icecream/detail_info.jpg",
+        "alt": "하겐다즈 파인트 클래식"
+      },
+      "stock": 5
+    },
+    {
+      "id": "product-ubuho",
       "name": "[대구 반할만떡] 유부호만두",
       "description": "유부로 속을 든든히 채운 군만두",
-      "price": 6900,
-      "saleRatio": 0.24,
-      "salePrice": 5244,
+      "price": "6,900",
+      "saleRatio": "",
+      "salePrice": "",
       "image": {
         "thumbnail": "ubuho/thumbnail.jpg",
         "view": "ubuho/detail_view.jpg",
@@ -14,13 +205,50 @@
         "info": "ubuho/detail_info.jpg",
         "alt": "유부호 만두"
       },
-      "stock": 5
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
     },
     {
-      "id": "product-ekfk",
+      "id": "product-jukkumi",
+      "name": "[홍대주꾸미] 주꾸미 볶음 300g (냉동)",
+      "description": "매콤달콤한 마력의 밥도둑",
+      "price": "8,900",
+      "saleRatio": 15,
+      "salePrice": "7,565",
+      "image": {
+        "thumbnail": "jukkumi/thumbnail.jpg",
+        "view": "jukkumi/detail_view.jpg",
+        "banner": "jukkumi/detail_banner.jpg",
+        "info": "jukkumi/detail_info.jpg",
+        "alt": "홍대 주꾸미"
+      },
+      "stock": 8,
+      "badge_karly": "karly _only"
+    },
+    {
+      "id": "product-kangnam",
+      "name": "[강남면옥] 소갈비찜",
+      "description": "보는 맛과 먹는 맛 모두 푸짐",
+      "price": "29,800",
+      "saleRatio": 0,
+      "salePrice": 0,
+      "image": {
+        "thumbnail": "kangnam/thumbnail.jpg",
+        "view": "kangnam/detail_view.jpg",
+        "banner": "kangnam/detail_banner.jpg",
+        "info": "kangnam/detail_info.jpg",
+        "alt": "강남면옥 소갈비찜"
+      },
+      "stock": 2,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-tangtang",
       "name": "[풀무원] 탱탱쫄면 (4개입)",
       "description": "튀기지 않아 부드럽고 매콤한",
-      "price": 4980,
+      "price": "4,980",
       "saleRatio": 0,
       "salePrice": 0,
       "image": {
@@ -33,12 +261,220 @@
       "stock": 10
     },
     {
-      "id": "product-akqk",
+      "id": "product-apple",
+      "name": "썸머킹 사과 1.3kg (4~8입)",
+      "description": "여름에 만나는 풋풋한 매력",
+      "price": "12,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "apple/thumbnail.jpg",
+        "view": "apple/detail_view.jpg",
+        "banner": "apple/detail_banner.jpg",
+        "info": "apple/detail_info.jpg",
+        "alt": "사과"
+      },
+      "stock": 5
+    },
+    {
+      "id": "product-banana",
+      "name": "[KF365] DOLE 실속 바나나 1kg (필리핀)",
+      "description": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+      "price": "3,190",
+      "saleRatio": "17",
+      "salePrice": "3,890",
+      "image": {
+        "thumbnail": "banana/thumbnail.jpg",
+        "view": "banana/detail_view.jpg",
+        "banner": "banana/detail_banner.jpg",
+        "info": "banana/detail_info.jpg",
+        "alt": "바나나"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only"
+    },
+    {
+      "id": "product-oatmeal",
+      "name": "[플라하반] 오트밀 5종 (택1)",
+      "description": "고급 아이리쉬 귀리로 만든 오트밀 [신제품 입고]",
+      "price": "7,300",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "oatmeal/thumbnail.jpg",
+        "view": "oatmeal/detail_view.jpg",
+        "banner": "oatmeal/detail_banner.jpg",
+        "info": "oatmeal/detail_info.jpg",
+        "alt": "플라하반 오트밀 5종 택1"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-bacon",
+      "name": "[Kalry's] 한돈 삼겹 베이컨",
+      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
+      "price": "4,500",
+      "saleRatio": 7,
+      "salePrice": "4,185",
+      "image": {
+        "thumbnail": "bacon/thumbnail.jpg",
+        "view": "bacon/detail_view.jpg",
+        "banner": "bacon/detail_banner.jpg",
+        "info": "bacon/detail_info.jpg",
+        "alt": "칼리 한돈 삼겹 베이컨"
+      },
+      "stock": 13,
+      "badge_karly": "karly _only"
+    },
+    {
+      "id": "product-wetTissue",
+      "name": "[Kurly's] 데일리 물티슈(100매 X 10팩)",
+      "description": "믿고 쓰는 우리 집 물티슈",
+      "price": "11,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "wetTissue/thumbnail.jpg",
+        "view": "wetTissue/detail_view.jpg",
+        "banner": "wetTissue/detail_banner.jpg",
+        "info": "wetTissue/detail_info.jpg",
+        "alt": "물티슈"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only"
+    },
+    {
+      "id": "product-egg",
+      "name": "[KF365] 1+등급 무항생제 특란 20구",
+      "description": "1구 당 판매가: 365원",
+      "price": "7,300",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "egg/thumbnail.jpg",
+        "view": "egg/detail_view.jpg",
+        "banner": "egg/detail_banner.jpg",
+        "info": "egg/detail_info.jpg",
+        "alt": "무항생제 특란"
+      },
+      "stock": 5,
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-springRoll",
+      "name": "[도리깨침] 월남쌈 밀키트",
+      "description": "풍성한 재료에 담긴 다채로운 맛",
+      "price": "20,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "springRoll/thumbnail.jpg",
+        "view": "springRoll/detail_view.jpg",
+        "banner": "springRoll/detail_banner.jpg",
+        "info": "springRoll/detail_info.jpg",
+        "alt": "월남쌈"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-rice",
+      "name": "조선향미 8kg",
+      "description": "삼시세끼 넉넉하게 즐길 수 있는 고품격 쌀밥 22년산쌀",
+      "price": "45,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "rice/thumbnail.jpg",
+        "view": "rice/detail_view.jpg",
+        "banner": "rice/detail_banner.jpg",
+        "info": "rice/detail_info.jpg",
+        "alt": "조선향미 8kg"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-tomato",
+      "name": "[KF365] 완숙토마토 2kg",
+      "description": "최대혜택가 : 8,720원",
+      "price": "11,900",
+      "saleRatio": "8",
+      "salePrice": "10,900",
+      "image": {
+        "thumbnail": "tomato/thumbnail.jpg",
+        "view": "tomato/detail_view.jpg",
+        "banner": "tomato/detail_banner.jpg",
+        "info": "tomato/detail_info.jpg",
+        "alt": "토마토"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-dessicant",
+      "name": "[생활공작소] 옷걸이형 제습제 2종 (택1)",
+      "description": "얇고 슬림한 옷걸이형 대용량 제습제",
+      "price": "15,900",
+      "saleRatio": "18",
+      "salePrice": "12,900",
+      "image": {
+        "thumbnail": "dessicant/thumbnail.jpg",
+        "view": "dessicant/detail_view.jpg",
+        "banner": "dessicant/detail_banner.jpg",
+        "info": "dessicant/detail_info.jpg",
+        "alt": "옷걸이형 제습제"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-icecream",
+      "name": "[하겐다즈] 파인트 클래식 아이스크림 8종 (택1)",
+      "description": "고르는 재미, 나누는 기쁨",
+      "price": "15,500",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "icecream/thumbnail.jpg",
+        "view": "icecream/detail_view.jpg",
+        "banner": "icecream/detail_banner.jpg",
+        "info": "icecream/detail_info.jpg",
+        "alt": "하겐다즈 파인트 클래식"
+      },
+      "stock": 5
+    },
+    {
+      "id": "product-ubuho",
+      "name": "[대구 반할만떡] 유부호만두",
+      "description": "유부로 속을 든든히 채운 군만두",
+      "price": "6,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "ubuho/thumbnail.jpg",
+        "view": "ubuho/detail_view.jpg",
+        "banner": "ubuho/detail_banner.jpg",
+        "info": "ubuho/detail_info.jpg",
+        "alt": "유부호 만두"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-jukkumi",
       "name": "[홍대주꾸미] 주꾸미 볶음 300g (냉동)",
       "description": "매콤달콤한 마력의 밥도둑",
-      "price": 7900,
-      "saleRatio": 0.13,
-      "salePrice": 6800,
+      "price": "8,900",
+      "saleRatio": 15,
+      "salePrice": "7,565",
       "image": {
         "thumbnail": "jukkumi/thumbnail.jpg",
         "view": "jukkumi/detail_view.jpg",
@@ -46,13 +482,14 @@
         "info": "jukkumi/detail_info.jpg",
         "alt": "홍대 주꾸미"
       },
-      "stock": 8
+      "stock": 8,
+      "badge_karly": "karly _only"
     },
     {
-      "id": "product-tkwk",
+      "id": "product-kangnam",
       "name": "[강남면옥] 소갈비찜",
       "description": "보는 맛과 먹는 맛 모두 푸짐",
-      "price": 29800,
+      "price": "29,800",
       "saleRatio": 0,
       "salePrice": 0,
       "image": {
@@ -62,15 +499,84 @@
         "info": "kangnam/detail_info.jpg",
         "alt": "강남면옥 소갈비찜"
       },
-      "stock": 2
+      "stock": 2,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
     },
     {
-      "id": "product-ckzk",
+      "id": "product-tangtang",
+      "name": "[풀무원] 탱탱쫄면 (4개입)",
+      "description": "튀기지 않아 부드럽고 매콤한",
+      "price": "4,980",
+      "saleRatio": 0,
+      "salePrice": 0,
+      "image": {
+        "thumbnail": "tangtang/thumbnail.jpg",
+        "view": "tangtang/detail_view.jpg",
+        "banner": "tangtang/detail_banner.jpg",
+        "info": "tangtang/detail_info.jpg",
+        "alt": "풀무원 탱탱쫄면"
+      },
+      "stock": 10
+    },
+    {
+      "id": "product-apple",
+      "name": "썸머킹 사과 1.3kg (4~8입)",
+      "description": "여름에 만나는 풋풋한 매력",
+      "price": "12,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "apple/thumbnail.jpg",
+        "view": "apple/detail_view.jpg",
+        "banner": "apple/detail_banner.jpg",
+        "info": "apple/detail_info.jpg",
+        "alt": "사과"
+      },
+      "stock": 5
+    },
+    {
+      "id": "product-banana",
+      "name": "[KF365] DOLE 실속 바나나 1kg (필리핀)",
+      "description": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+      "price": "3,190",
+      "saleRatio": "17",
+      "salePrice": "3,890",
+      "image": {
+        "thumbnail": "banana/thumbnail.jpg",
+        "view": "banana/detail_view.jpg",
+        "banner": "banana/detail_banner.jpg",
+        "info": "banana/detail_info.jpg",
+        "alt": "바나나"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only"
+    },
+    {
+      "id": "product-oatmeal",
+      "name": "[플라하반] 오트밀 5종 (택1)",
+      "description": "고급 아이리쉬 귀리로 만든 오트밀 [신제품 입고]",
+      "price": "7,300",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "oatmeal/thumbnail.jpg",
+        "view": "oatmeal/detail_view.jpg",
+        "banner": "oatmeal/detail_banner.jpg",
+        "info": "oatmeal/detail_info.jpg",
+        "alt": "플라하반 오트밀 5종 택1"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only",
+      "badge_text": "한정수량"
+    },
+    {
+      "id": "product-bacon",
       "name": "[Kalry's] 한돈 삼겹 베이컨",
       "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
-      "price": 4500,
-      "saleRatio": 0.25,
-      "salePrice": 3375,
+      "price": "4,500",
+      "saleRatio": 7,
+      "salePrice": "4,185",
       "image": {
         "thumbnail": "bacon/thumbnail.jpg",
         "view": "bacon/detail_view.jpg",
@@ -78,7 +584,127 @@
         "info": "bacon/detail_info.jpg",
         "alt": "칼리 한돈 삼겹 베이컨"
       },
-      "stock": 13
+      "stock": 13,
+      "badge_karly": "karly _only"
+    },
+    {
+      "id": "product-wetTissue",
+      "id": "product-wetTissue",
+      "name": "[Kurly's] 데일리 물티슈(100매 X 10팩)",
+      "description": "믿고 쓰는 우리 집 물티슈",
+      "price": "11,900",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "wetTissue/thumbnail.jpg",
+        "view": "wetTissue/detail_view.jpg",
+        "banner": "wetTissue/detail_banner.jpg",
+        "info": "wetTissue/detail_info.jpg",
+        "alt": "물티슈"
+      },
+      "stock": 5,
+      "badge_karly": "karly _only"
+    },
+    {
+      "id": "product-egg",
+      "name": "[KF365] 1+등급 무항생제 특란 20구",
+      "description": "1구 당 판매가: 365원",
+      "price": "7,300",
+      "saleRatio": "",
+      "salePrice": "",
+      "image": {
+        "thumbnail": "egg/thumbnail.jpg",
+        "view": "egg/detail_view.jpg",
+        "banner": "egg/detail_banner.jpg",
+        "info": "egg/detail_info.jpg",
+        "alt": "무항생제 특란"
+      },
+      "stock": 5,
+      "badge_text": "한정수량"
+    }
+  ],
+
+  "banner": [
+    {
+      "src": "../assets/images/banner/banner06.jpg",
+      "alt": "CJ 빅세일 위크 배너",
+      "figcaption": "장바구니 단골 브랜드 CJ 빅세일 위크 배너"
+    },
+    {
+      "src": "../assets/images/banner/banner07.jpg",
+      "alt": "뷰티 컬리 배너",
+      "figcaption": "헤어, 바디, 구강 할인! 뷰티컬리에서 만나요"
+    },
+    {
+      "src": "../assets/images/banner/banner08.jpg",
+      "alt": "SNS 핫아이템 배너",
+      "figcaption": "SNS 핫아이템 칙뽈로 닭마카세"
+    },
+    {
+      "src": "../assets/images/banner/banner09.jpg",
+      "alt": "미식 취향 찾기 배너",
+      "figcaption": "미식 취향 찾기 복숭아, 아디까지 먹어봤나요?"
+    },
+    {
+      "src": "../assets/images/banner/banner10.jpg",
+      "alt": "컬리 X 메가박스 위크 배너",
+      "figcaption": "컬리 X 메가박스 위크 영화관으로 떠나는 바캉스"
+    },
+    {
+      "src": "../assets/images/banner/banner11.png",
+      "alt": "갤럭시 사전 예약 배너",
+      "figcaption": "8월 1일 00시 갤럭시 사전 예약"
+    },
+    {
+      "src": "../assets/images/banner/banner12.jpg",
+      "alt": "매일 23시 한정 수량 오픈 배너",
+      "figcaption": "매일 23시 한정 수량 오픈, 무항생제 대한 30구"
+    },
+    {
+      "src": "../assets/images/banner/banner13.jpg",
+      "alt": "고민별 맞춤 뷰티 배너",
+      "figcaption": "치아부터 두피까지 고민별 맞춤 뷰티"
+    },
+    {
+      "src": "../assets/images/banner/banner14.jpg",
+      "alt": "한정수량 희소가치 프로젝트 상품 배너",
+      "figcaption": "에어룸부터 마틸다 토마토까지 서둘러야 하는 희소가치 상품"
+    },
+    {
+      "src": "../assets/images/banner/banner15.jpg",
+      "alt": "주문별 맞춤 포장 배너",
+      "figcaption": "주문별 맞춤 포장으로 상품을 안전하게"
+    },
+    {
+      "src": "../assets/images/banner/banner16.jpg",
+      "alt": "7월 결제 혜택 배너",
+      "figcaption": "한눈에 보는 7월 결제 혜택"
+    }
+  ],
+  "registered_users": [
+    {
+      "id": "id_sample",
+      "pw": "pw_sample",
+      "uniqueId": "uniqueId_sample",
+      "description": "유저 데이터 스키마",
+      "shoppingBasket": [],
+      "recentlyViewed_products": []
+    },
+    {
+      "id": "usedId00",
+      "pw": "BBB",
+      "uniqueId": "bbbbbbbbbb",
+      "description": "유저 데이터 스키마",
+      "shoppingBasket": [],
+      "recentlyViewed_products": []
+    },
+    {
+      "id": "usedId01",
+      "pw": "CCC",
+      "uniqueId": "cccccccccc",
+      "description": "유저 데이터 스키마",
+      "shoppingBasket": [],
+      "recentlyViewed_products": []
     }
   ]
 }

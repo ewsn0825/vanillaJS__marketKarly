@@ -1,0 +1,252 @@
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  color: #333333;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+  font-family: Pretendard;
+}
+
+/* logo */
+
+.logo_karly {
+  width: 5rem;
+  height: 2.8125rem;
+  display: block;
+  background: url("../assets/images/logo2.svg") no-repeat;
+}
+
+/* button */
+
+.header_banner_button {
+  background: url("../assets/images/Icon/Cancel.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+  border: 0;
+  
+}
+
+.search_button {
+  cursor: pointer;
+}
+
+.search_icon {
+  background: url("../assets/images/Icon/Search.png") no-repeat;
+  width: 2.5rem; 
+  height: 2.1875rem;
+  display: block;
+  border: 0;
+}
+
+.heart_icon {
+  width: 2rem;
+  height: 1.9375rem;
+  display: block;
+  background: url("../assets/images/Icon/Heart.png") no-repeat;
+}
+
+.location_icon {
+  background: url("../assets/images/Icon/Location.png") no-repeat;
+  width: 2rem;
+  height: 1.9375rem;
+  display: block;
+}
+
+.black_cart_icon {
+  background: url("../assets/images/Icon/Cart-black.png") no-repeat;
+  width: 2rem;
+  height: 1.9375rem;
+  display: block;
+}
+
+/* header */
+
+.divider {
+  color: #E1E1E1;
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.header_container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-left: 20%;
+  padding-right: 20%;
+  position: relative;
+}
+
+.search_container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.logo_container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.switch_box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  gap: 12px;
+  position: relative;
+}
+
+.market_link {
+  color: #5F0080;
+}
+
+.beauty_link {
+  color: #898989;
+}
+.beauty_link::after {
+  content: "";
+  display: block;
+  background: url("../assets/images/Icon/new.svg");
+  width: 7px;
+  height: 7px;
+  top: -5px;
+  right: -15px;
+  position: absolute;
+}
+
+.search_form_container {
+  margin-right: 120px;
+}
+
+.search_form {
+  width: 400px;
+  border: 1.5px solid #5F0080;
+  border-radius: 3px;
+  padding: 10px 10px 10px 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+.search_form_input {
+  width: 320px;
+  border: 0;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.member_icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.header_nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.header_nav_list {
+  font-weight: 600;
+  width: 700px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.header_nav_button {
+  border: 0;
+  background: #ffffff;
+  font-weight: bold;
+  transform: translateY(1px);
+}
+.header_nav_button::before {
+  content: "";
+  display: inline-block;
+  background: url("../assets/images/Icon/Hamburger_black.png") no-repeat;
+  width: 16px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.morning_star_delivery {
+  display: block;
+  font-size: 12px;
+  color: #A6A6A6;
+  border: 1px solid #A6A6A6;
+  padding: 6px 8px;
+  border-radius: 20px;
+}
+
+.morning_star_delivery_color {
+  color: #5F0080;
+}
+
+.header_banner{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: #5F0080;
+  color: #ffffff;
+  order: -1;
+}
+.header_banner_link {
+  display: block;
+  font-size: 0.875rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.member_only {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  right: 20%;
+}
+.member_only_list {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.member_sign_up {
+  color: #5F0080;
+}
+
+.member_custermer_center::after {
+  content: "";
+  display: inline-block;
+  background: url("../assets/images/Icon/down.svg");
+  width: 8px;
+  height: 6px;
+  transform: translateY(-3px);
+  margin-left: 5px;
+}

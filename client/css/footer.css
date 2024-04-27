@@ -1,0 +1,151 @@
+
+footer {
+  @apply text-[#333333] border-t-[#E1E1E1] border-t border-solid;
+  font-family: Pretendard;
+}
+
+/* icon */
+.blog {
+  @apply w-[1.875rem] h-[1.875rem] block;
+  background: url("../assets/images/Icon/Blog.svg") no-repeat;
+}
+.facebook {
+  @apply w-[1.875rem] h-[1.875rem] block;
+  background: url("../assets/images/Icon/FaceBook.svg") no-repeat;
+}
+.instagram {
+  @apply w-[1.875rem] h-[1.875rem] block;
+  background: url("../assets/images/Icon/Instagram.svg") no-repeat;
+}
+.naverPost {
+  @apply w-[1.875rem] h-[1.875rem] block;
+  background: url("../assets/images/Icon/NaverPost.svg") no-repeat;
+}
+.youtube {
+  @apply w-[1.875rem] h-[1.875rem] block;
+  background: url("../assets/images/Icon/Youtube.svg") no-repeat;
+}
+
+/* button */
+.inquiry_button {
+  @apply cursor-pointer border w-[8.75rem] h-10 border-solid border-[#C4C4C4];
+  background: white;
+}
+
+/* footer */
+.divider_inquiry {
+  @apply text-[#333333] text-base;
+}
+.divider_about {
+  @apply text-[#333333] text-[10px];
+}
+.footer_top {
+  flex-flow: column nowrap;
+  width: 1050px;
+  margin: 0px auto;
+}
+
+.footer_info {
+  @apply flex justify-between items-stretch pt-7 pb-8 px-0;
+  flex-flow: row nowrap;
+}
+.customer_service {
+  @apply flex justify-start items-start gap-4;
+  flex-flow: column nowrap;
+}
+.customer_center {
+  @apply text-[21.328px] font-bold leading-[140%];
+}
+.center_number {
+  @apply text-[37.897px] font-bold;
+}
+.center_time {
+  @apply text-base font-semibold;
+}
+.number_inquiry {
+  @apply flex justify-start items-center gap-2.5;
+  flex-flow: row nowrap;
+}
+.kakao_inquiry {
+  @apply flex justify-start items-center gap-2.5 leading-[26px];
+  flex-flow: row-reverse nowrap;
+}
+.one_on_one_inquiry {
+  @apply flex justify-start items-center gap-2.5 leading-[26px];
+  flex-flow: row-reverse nowrap;
+}
+.bulk_inquiry {
+  @apply flex justify-start items-center gap-2.5 leading-[26px];
+  flex-flow: row-reverse nowrap;
+}
+.non_member {
+  @apply text-[10px];
+}
+.about {
+  @apply flex justify-start items-start gap-7;
+  flex-flow: column nowrap;
+}
+.about_nav {
+  @apply flex justify-between items-stretch gap-2.5;
+  flex-flow: row nowrap;
+}
+.about_info {
+  @apply text-[10px] leading-[18px];
+}
+.primary {
+  @apply text-[#5F0080] font-bold;
+}
+.sns_box {
+  @apply flex justify-start items-stretch gap-5;
+  flex-flow: row nowrap;
+}
+.company {
+  @apply border-t-[#E1E1E1] border-t border-solid;
+}
+.company_wrap {
+  @apply flex justify-between items-start text-[0.625rem] leading-4 gap-6 pt-6 pb-8 px-0;
+  flex-flow: row nowrap;
+}
+.company_list {
+  @apply flex justify-between items-start;
+  flex-flow: row nowrap;
+}
+.isms {
+  @apply flex justify-start items-start gap-2 before:content-[""] before:block before:w-[35px] before:h-[35px] before:shrink-0;
+  flex-flow: row nowrap;
+}
+.isms::before {
+  background: url("../assets/images/logo_isms.png") no-repeat;
+}
+.privacy {
+  @apply flex justify-start items-start gap-2 before:content-[""] before:block before:w-[35px] before:h-[35px] before:shrink-0;
+  flex-flow: row nowrap;
+}
+.privacy::before {
+  background: url("../assets/images/logo_privacy.png") no-repeat;
+}
+.woori {
+  @apply flex justify-start items-start gap-2 before:content-[""] before:block before:w-[35px] before:h-[35px] before:shrink-0;
+  flex-flow: row nowrap;
+}
+.woori::before {
+  background: url("../assets/images/logo_wooriBank.png") no-repeat;
+}
+.toss {
+  @apply flex justify-start items-start gap-2 before:content-[""] before:block before:w-[105px] before:h-[35px] before:shrink-0;
+  flex-flow: row nowrap;
+}
+.toss::before {
+  background: url("../assets/images/logo_tosspayments.png") no-repeat;
+}
+.footer_bottom {
+  @apply text-[0.625rem] text-[#898989] flex justify-center items-center py-[1.5625rem];
+  background: #F9F9F9;
+  flex-flow: column nowrap;
+}
+.footer_bottom span {
+  @apply leading-[180%];
+}
+.footer_bottom small {
+  @apply leading-[160%] py-2.5;
+}

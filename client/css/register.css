@@ -1,0 +1,89 @@
+
+.register_container {
+  @apply w-[600px] mx-auto my-0 pb-10;
+  font-family: pretendard;
+}
+.register_container_form {
+  @apply max-w-screen-lg w-[650px] flex flex-col mx-auto;
+}
+.register_container_title {
+  @apply text-center text-[25px] pt-20 pb-[30px];
+}
+.register_indicator_essential::before {
+  @apply content-["*"] text-[red];
+}
+.register_indicator_essential {
+  @apply block text-end text-[4px];
+}
+.register_hr_line {
+  @apply my-2.5;
+}
+.register_box_in_line {
+  @apply flex h-10 gap-x-2 mx-0 my-2.5;
+}
+.register_term_box_in_line {
+  @apply flex my-[0.9375rem];
+}
+.register_question_essencial {
+  @apply flex items-center w-1/5 font-semibold after:content-["*"] after:text-[red];
+}
+.register_question_optional {
+  @apply flex items-center w-1/5 font-semibold;
+}
+.register__question__term {
+  @apply flex w-1/5;
+}
+.register_text_input {
+  @apply flex rounded border w-6/12 px-5 py-0 border-solid border-[#A6A6A6];
+}
+.register__button {
+  @apply flex items-center justify-center w-1/5;
+}
+.register__label__date {
+  @apply flex items-center w-1/5 font-semibold;
+}
+.register__input__date {
+  @apply flex rounded border w-6/12 text-center px-5 py-0 border-solid border-[#A6A6A6];
+}
+.register__input__address {
+  @apply block h-10 w-80 text-base;
+}
+.register_box_in_line .addressBox {
+  @apply h-[68px] text-[4px];
+}
+.register__radioS {
+  @apply flex items-center justify-between w-3/5 gap-2.5;
+}
+.register__input__radio {
+  @apply w-[25px] h-[25px] border;
+}
+.register__inputBox {
+  @apply flex justify-start items-center gap-2;
+  flex-flow: row nowrap;
+}
+.register__checkboxS {
+  @apply text-[#333333] flex flex-col gap-5;
+}
+.register__checkbox__input {
+  @apply inline-block;
+}
+.register__checkbox__label {
+  @apply font-semibold inline-block;
+}
+.register__button,
+.register__input__address {
+  @apply rounded text-[#5F0080] bg-white font-bold border-[solid] border-[1px];
+}
+.register__submitAll {
+  @apply w-[340px] h-[54px] rounded text-white bg-[#5F0080] mx-auto my-0;
+}
+.register__listAll {
+  @apply flex justify-start items-stretch;
+  flex-flow: column nowrap;
+}
+.register__checkboxAlltitle {
+  @apply text-[21.328px] font-semibold leading-[150%];
+}
+.register__allText {
+  @apply text-[10px] block text-[#898989] pl-5;
+}

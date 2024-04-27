@@ -1,0 +1,97 @@
+.main_cart {
+  @apply flex flex-col flex-nowrap items-center justify-start gap-11 py-20;
+  font-family: pretendard;
+}
+.cart_section {
+  @apply flex flex-col flex-nowrap items-center justify-start text-[1.333rem] font-semibold leading-[150%] text-[#101010];
+}
+.cart_all_box {
+  @apply flex w-[53rem] flex-row flex-nowrap items-start justify-between;
+}
+.cart_button {
+  @apply flex flex-row flex-nowrap items-center justify-start gap-2 border-b border-solid border-b-[#101010] py-4 transition-none;
+}
+.cart_button_click {
+  @apply flex flex-row flex-nowrap items-stretch justify-start border-[none] text-base font-semibold leading-[150%] text-[#333333];
+  background: none;
+}
+.cart_button_img {
+  @apply mr-2 block h-6 w-6 -translate-x-1;
+  background: url("./../assets/productDetail/isChecked=true.png") no-repeat;
+}
+
+.product_info {
+  @apply flex;
+}
+.left_box {
+  @apply flex flex-row flex-nowrap items-stretch justify-start;
+}
+.right_box {
+  @apply flex w-[17.75rem] shrink-0 flex-col flex-nowrap items-start justify-start gap-4;
+}
+
+/* -------------------------------- */
+.delivery_section {
+  @apply flex flex-col flex-nowrap items-start justify-start gap-3 self-stretch p-5;
+}
+.delivery_address {
+  @apply text-base font-semibold leading-[150%] text-[#101010];
+}
+.delivery_content {
+  @apply text-base font-semibold leading-[150%] text-[#101010];
+}
+.star_delivery_item {
+  @apply text-[0.7501875rem] font-semibold leading-[150%] text-[#5f0080];
+}
+.delivery_address_change_button {
+  @apply flex h-11 flex-col flex-nowrap items-center justify-center self-stretch rounded border border-solid border-[#5f0080];
+  background: #ffffff;
+}
+.delivery_address_change {
+  @apply font-semibold leading-[150%] text-[#5f0080];
+  font: 1rem bold;
+}
+
+/* -------------------------------- */
+.price_section {
+  @apply flex flex-col flex-nowrap items-start justify-center self-stretch border border-solid border-[#e1e1e1] p-5;
+  background: #f9f9f9;
+}
+.price_box {
+  @apply flex w-[15.25rem] flex-col flex-nowrap items-start justify-center gap-4 border-b border-solid border-b-[#e1e1e1] pb-6;
+}
+.price_product,
+.price_product_discount,
+.price_delivery {
+  @apply flex flex-row flex-nowrap items-center justify-between self-stretch text-base leading-[160%] text-[#333333];
+  font-family: Pretendard;
+}
+.price_total {
+  @apply flex w-[15.25rem] flex-col flex-nowrap items-end justify-start gap-[0.6875rem] pt-6;
+}
+.price_total .price_final {
+  @apply flex flex-row flex-nowrap items-center justify-between self-stretch text-base leading-[160%] text-[#333333];
+}
+.price_total .price_total_final {
+  @apply text-[1.776875rem] font-bold leading-[140%] text-[#101010];
+}
+.price_save {
+  @apply mr-6 flex flex-row flex-nowrap items-start
+  justify-between text-[0.7501875rem] leading-[150%];
+}
+.point_save_info {
+  @apply ml-2 text-[0.7501875rem] font-semibold leading-[150%] text-[#333333];
+  font-family: Pretendard;
+}
+.point_contents {
+  @apply flex items-stretch justify-between;
+}
+
+/* -------------------------------- */
+.order {
+  @apply border-black;
+}
+
+.order_details {
+  @apply flex flex-col flex-nowrap items-stretch justify-center self-stretch text-[0.0468867188rem] font-semibold leading-[150%] text-[#898989];
+}

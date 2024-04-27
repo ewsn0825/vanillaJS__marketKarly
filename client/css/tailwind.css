@@ -1,6 +1,80 @@
-/* @import 'tailwindcss/base'; */
+@import "./pure_login.css";
+@import "./register.css";
 
+@import "./cart.css";
+@import "./productDetail.css";
+
+@import "./productList.css";
+
+@import "footer.css";
+@import "mainPage.css";
+@import "header.css";
+@import "productList.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* header */
+  .search_icon {
+    @apply block h-[2.1875rem] w-10 border-0;
+    background: url("../assets/images/Icon/Search.svg") no-repeat;
+  }
+
+  .header_banner_button {
+    @apply block h-[1.875rem] w-[1.875rem] border-0;
+    background: url("../assets/images/Icon/Cancel.svg") no-repeat;
+  }
+  /* mainPage */
+
+  .recommend_today_button {
+    cursor: pointer;
+    background: #ffffff url("../assets/images/Icon/rightArrow_black.png")
+      no-repeat;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    border: none;
+    background-position: center;
+    box-shadow: 0 0 0.625rem #e1e1e1;
+    position: absolute;
+    top: 45%;
+    right: -2.4%;
+    z-index: 20;
+  }
+  .main_banner_button {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    border: 0;
+    background: rgba(0, 0, 0, 0.1) url("../assets/images/Icon/Arrow.png");
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 50ms ease-in-out;
+  }
+
+  .recommend_today_before_price {
+    display: block;
+    text-decoration: line-through;
+    color: #a6a6a6;
+    font-size: 0.8125rem;
+    margin-top: 1rem;
+  }
+
+  .recommend_today_cart {
+    cursor: pointer;
+    position: absolute;
+    bottom: 30%;
+    right: 8%;
+    background: #2a0038 url("../assets/icon/Cart_white.svg");
+    background-position: center;
+    opacity: 50%;
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 50%;
+    border: 0;
+  }
+}
