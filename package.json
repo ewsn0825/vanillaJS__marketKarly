@@ -10,7 +10,8 @@
     "tailwind": "tailwindcss -i ./client/css/tailwind.css -o ./client/css/main.css --watch",
     "start": "run-p serve:* tailwind",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "webpack"
   },
   "keywords": [
     "html",
